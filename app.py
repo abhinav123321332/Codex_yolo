@@ -28,14 +28,23 @@ with open(META_PATH, "r", encoding="utf-8") as f:
     META = json.load(f)
 
 CLASSES = META["classes"]
-IMG_SIZE = int(META.get("image_size", 224))
+
+IMG_SIZE = int(
+    META.get("image_size", 224)
+)
 
 CONF_THRESHOLD = float(
-    META.get("default_confidence_threshold", 0.8)
+    META.get(
+        "default_confidence_threshold",
+        0.8
+    )
 )
 
 MARGIN_THRESHOLD = float(
-    META.get("default_margin_threshold", 0.15)
+    META.get(
+        "default_margin_threshold",
+        0.15
+    )
 )
 
 
@@ -45,7 +54,7 @@ MARGIN_THRESHOLD = float(
 
 session = ort.InferenceSession(
     MODEL_PATH,
-    providers=["CPUExecutionProvider"],
+    providers=["CPUExecutionProvider"]
 )
 
 INPUT_NAME = session.get_inputs()[0].name
@@ -55,26 +64,38 @@ INPUT_NAME = session.get_inputs()[0].name
 # IMAGE PREPROCESSING
 # ============================================================
 
-def letterbox(image, size=224, fill=(114, 114, 114)):
-    """
-    Resize image while preserving aspect ratio,
-    then pad to a square.
-    """
+def letterbox(
+    image,
+    size=224,
+    fill=(114, 114, 114)
+):
 
     image = image.convert("RGB")
 
-    w, h = image.size
+    width, height = image.size
 
-    if w <= 0 or h <= 0:
-        raise ValueError("Invalid image dimensions")
+    if width <= 0 or height <= 0:
+        raise ValueError(
+            "Invalid image dimensions"
+        )
 
-    scale = min(size / w, size / h)
+    scale = min(
+        size / width,
+        size / height
+    )
 
-    nw = max(1, round(w * scale))
-    nh = max(1, round(h * scale))
+    new_width = max(
+        1,
+        round(width * scale)
+    )
+
+    new_height = max(
+        1,
+        round(height * scale)
+    )
 
     image = image.resize(
-        (nw, nh),
+        (new_width, new_height),
         Image.Resampling.BILINEAR
     )
 
@@ -84,74 +105,101 @@ def letterbox(image, size=224, fill=(114, 114, 114)):
         fill
     )
 
-    left = (size - nw) // 2
-    top = (size - nh) // 2
+    left = (
+        size - new_width
+    ) // 2
 
-    canvas.paste(image, (left, top))
+    top = (
+        size - new_height
+    ) // 2
+
+    canvas.paste(
+        image,
+        (left, top)
+    )
 
     return canvas
 
 
 def preprocess(image):
 
-    image = ImageOps.exif_transpose(image)
+    image = ImageOps.exif_transpose(
+        image
+    )
 
     image = letterbox(
         image,
         IMG_SIZE
     )
 
-    arr = np.asarray(
+    array = np.asarray(
         image,
         dtype=np.float32
-    ) / 255.0
+    )
 
-    # HWC -> CHW
-    arr = np.transpose(
-        arr,
+    array = array / 255.0
+
+    # HWC → CHW
+    array = np.transpose(
+        array,
         (2, 0, 1)
     )
 
     # Add batch dimension
-    return np.expand_dims(
-        arr,
+    array = np.expand_dims(
+        array,
         axis=0
-    ).astype(np.float32)
+    )
+
+    return array.astype(
+        np.float32
+    )
 
 
 # ============================================================
 # SOFTMAX
 # ============================================================
 
-def softmax(x):
+def softmax(values):
 
-    x = np.asarray(
-        x,
+    values = np.asarray(
+        values,
         dtype=np.float32
     )
 
-    x = x - np.max(
-        x,
-        axis=-1,
-        keepdims=True
+    values = (
+        values
+        - np.max(
+            values,
+            axis=-1,
+            keepdims=True
+        )
     )
 
-    e = np.exp(x)
+    exponential = np.exp(
+        values
+    )
 
-    return e / np.sum(
-        e,
-        axis=-1,
-        keepdims=True
+    return (
+        exponential
+        /
+        np.sum(
+            exponential,
+            axis=-1,
+            keepdims=True
+        )
     )
 
 
 # ============================================================
-# MODEL PREDICTION
+# MODEL INFERENCE
 # ============================================================
 
 def predict_image(image):
 
-    tensor = preprocess(image)
+    tensor = preprocess(
+        image
+    )
 
     outputs = session.run(
         None,
@@ -160,14 +208,17 @@ def predict_image(image):
         }
     )
 
-    raw = np.asarray(outputs[0])
+    raw_output = np.asarray(
+        outputs[0]
+    )
 
-    scores = raw.reshape(
-        raw.shape[0],
+    scores = raw_output.reshape(
+        raw_output.shape[0],
         -1
     )[0]
 
-    # Detect whether output is already probabilities
+    # Check whether the ONNX output is
+    # already normalized probabilities.
     if (
         np.all(scores >= 0)
         and np.isclose(
@@ -176,92 +227,148 @@ def predict_image(image):
             atol=1e-3
         )
     ):
-        probs = scores
-    else:
-        probs = softmax(scores)
+        probabilities = scores
 
-    # Highest probability
-    idx = int(
-        np.argmax(probs)
+    else:
+        probabilities = softmax(
+            scores
+        )
+
+    # Highest probability class
+    class_index = int(
+        np.argmax(
+            probabilities
+        )
     )
 
     confidence = float(
-        probs[idx]
+        probabilities[class_index]
     )
 
-    # Calculate confidence margin
-    order = np.argsort(
-        probs
+    # Sort probabilities
+    sorted_indices = np.argsort(
+        probabilities
     )[::-1]
 
-    margin = (
-        float(
-            probs[order[0]]
-            - probs[order[1]]
-        )
-        if len(order) > 1
-        else 1.0
-    )
+    # Confidence difference between
+    # first and second class
+    if len(sorted_indices) > 1:
 
-    predicted = (
-        CLASSES[idx]
-        if idx < len(CLASSES)
-        else str(idx)
-    )
+        margin = float(
+            probabilities[
+                sorted_indices[0]
+            ]
+            -
+            probabilities[
+                sorted_indices[1]
+            ]
+        )
+
+    else:
+
+        margin = 1.0
+
+    if class_index < len(CLASSES):
+
+        predicted_class = (
+            CLASSES[class_index]
+        )
+
+    else:
+
+        predicted_class = str(
+            class_index
+        )
 
     accepted = (
         confidence >= CONF_THRESHOLD
-        and margin >= MARGIN_THRESHOLD
+        and
+        margin >= MARGIN_THRESHOLD
     )
 
     final_class = (
-        predicted
+        predicted_class
         if accepted
         else "uncertain"
     )
 
-    probabilities = {
-        CLASSES[i]
-        if i < len(CLASSES)
-        else str(i):
-        round(float(probs[i]), 6)
+    probability_result = {}
 
-        for i in range(len(probs))
-    }
+    for index, probability in enumerate(
+        probabilities
+    ):
+
+        if index < len(CLASSES):
+
+            class_name = CLASSES[index]
+
+        else:
+
+            class_name = str(index)
+
+        probability_result[
+            class_name
+        ] = round(
+            float(probability),
+            6
+        )
 
     return {
-        "class": final_class,
-        "predicted_class": predicted,
-        "confidence": round(
-            confidence,
-            6
-        ),
-        "margin": round(
-            margin,
-            6
-        ),
-        "accepted": bool(
-            accepted
-        ),
+
+        "class":
+            final_class,
+
+        "predicted_class":
+            predicted_class,
+
+        "confidence":
+            round(
+                confidence,
+                6
+            ),
+
+        "margin":
+            round(
+                margin,
+                6
+            ),
+
+        "accepted":
+            bool(
+                accepted
+            ),
+
         "thresholds": {
-            "confidence": CONF_THRESHOLD,
-            "margin": MARGIN_THRESHOLD
+
+            "confidence":
+                CONF_THRESHOLD,
+
+            "margin":
+                MARGIN_THRESHOLD
+
         },
-        "probabilities": probabilities
+
+        "probabilities":
+            probability_result
+
     }
 
 
 # ============================================================
-# FLASK APP
+# FLASK APPLICATION
 # ============================================================
 
-app = Flask(__name__)
+app = Flask(
+    __name__
+)
 
-CORS(app)
+CORS(
+    app
+)
 
 
 # ============================================================
-# ROOT
+# ROOT ENDPOINT
 # ============================================================
 
 @app.get("/")
@@ -285,17 +392,22 @@ def root():
             IMG_SIZE,
 
         "endpoints": [
+
             "/",
+
             "/health",
+
             "/predict",
+
             "/api/upload"
+
         ]
 
     })
 
 
 # ============================================================
-# HEALTH CHECK
+# HEALTH ENDPOINT
 # ============================================================
 
 @app.get("/health")
@@ -322,37 +434,44 @@ def health():
 
 
 # ============================================================
-# COMMON IMAGE PROCESSING
+# READ UPLOADED IMAGE
 # ============================================================
 
-def process_uploaded_file():
+def get_uploaded_image():
 
     if "file" not in request.files:
 
         raise ValueError(
             "No image supplied. "
-            "Use multipart/form-data "
+            "Send the image using "
+            "multipart/form-data "
             "with field name 'file'."
         )
 
-    file = request.files["file"]
+    uploaded_file = (
+        request.files["file"]
+    )
 
-    if not file.filename:
+    if not uploaded_file.filename:
 
         raise ValueError(
             "Empty filename."
         )
 
-    image_bytes = file.read()
+    image_data = (
+        uploaded_file.read()
+    )
 
-    if not image_bytes:
+    if not image_data:
 
         raise ValueError(
             "Uploaded file is empty."
         )
 
     image = Image.open(
-        io.BytesIO(image_bytes)
+        io.BytesIO(
+            image_data
+        )
     )
 
     return image
@@ -367,29 +486,38 @@ def predict():
 
     try:
 
-        image = process_uploaded_file()
+        image = (
+            get_uploaded_image()
+        )
 
-        result = predict_image(
-            image
+        result = (
+            predict_image(
+                image
+            )
         )
 
         return jsonify({
 
-            "success": True,
+            "success":
+                True,
 
             **result
 
         })
 
-    except Exception as exc:
+    except Exception as error:
 
         return jsonify({
 
-            "success": False,
+            "success":
+                False,
 
             "error":
-                f"Inference failed: "
-                f"{type(exc).__name__}: {exc}"
+                (
+                    "Inference failed: "
+                    f"{type(error).__name__}: "
+                    f"{error}"
+                )
 
         }), 500
 
@@ -397,7 +525,8 @@ def predict():
 # ============================================================
 # /api/upload
 #
-# Compatibility endpoint for existing GreenArk frontend
+# This endpoint is provided for your
+# existing GreenArk frontend.
 # ============================================================
 
 @app.post("/api/upload")
@@ -405,39 +534,56 @@ def api_upload():
 
     try:
 
-        image = process_uploaded_file()
-
-        result = predict_image(
-            image
+        image = (
+            get_uploaded_image()
         )
 
-        # Compatibility response
+        result = (
+            predict_image(
+                image
+            )
+        )
+
         return jsonify({
 
-            "success": True,
+            "success":
+                True,
 
             # Main classification
-            "class": result["class"],
+            "class":
+                result["class"],
+
             "predicted_class":
-                result["predicted_class"],
+                result[
+                    "predicted_class"
+                ],
 
             # Confidence
             "confidence":
-                result["confidence"],
-
-            # Acceptance
-            "accepted":
-                result["accepted"],
+                result[
+                    "confidence"
+                ],
 
             # Margin
             "margin":
-                result["margin"],
+                result[
+                    "margin"
+                ],
 
-            # Full probabilities
+            # Whether prediction
+            # passed thresholds
+            "accepted":
+                result[
+                    "accepted"
+                ],
+
+            # All class probabilities
             "probabilities":
-                result["probabilities"],
+                result[
+                    "probabilities"
+                ],
 
-            # Compatibility aliases
+            # Compatibility fields
             "prediction":
                 result["class"],
 
@@ -449,15 +595,19 @@ def api_upload():
 
         })
 
-    except Exception as exc:
+    except Exception as error:
 
         return jsonify({
 
-            "success": False,
+            "success":
+                False,
 
             "error":
-                f"Classification failed: "
-                f"{type(exc).__name__}: {exc}"
+                (
+                    "Classification failed: "
+                    f"{type(error).__name__}: "
+                    f"{error}"
+                )
 
         }), 500
 
