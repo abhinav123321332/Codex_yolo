@@ -1,7 +1,6 @@
-ultralytics==8.3.253
-torch==2.8.0
-torchvision==0.23.0
+flask==3.1.2
+flask-cors==6.0.1
+gunicorn==23.0.0
+onnxruntime==1.23.2
 numpy>=1.26,<3
 Pillow>=10,<13
-onnx==1.19.0
-onnxruntime==1.23.2
