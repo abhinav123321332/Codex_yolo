@@ -1,0 +1,100 @@
+Features original: 32/15691; 0.4s
+Features original: 1632/15691; 15.2s
+Features original: 3232/15691; 31.4s
+Features original: 4832/15691; 46.3s
+Features original: 6432/15691; 60.4s
+Features original: 8032/15691; 76.2s
+Features original: 9632/15691; 93.4s
+Features original: 11232/15691; 109.1s
+Features original: 12832/15691; 124.4s
+Features original: 14432/15691; 139.8s
+Features flipped: 32/15691; 0.4s
+Features flipped: 1632/15691; 16.7s
+Features flipped: 3232/15691; 34.2s
+Features flipped: 4832/15691; 52.0s
+Features flipped: 6432/15691; 68.8s
+Features flipped: 8032/15691; 86.4s
+Features flipped: 9632/15691; 103.7s
+Features flipped: 11232/15691; 123.6s
+Features flipped: 12832/15691; 140.0s
+Features flipped: 14432/15691; 157.4s
+Features original: 32/3186; 0.4s
+Features original: 1632/3186; 17.9s
+Epoch 1: val_accuracy=0.9244, val_macro_f1=0.9163, best_epoch=1
+Epoch 5: val_accuracy=0.9363, val_macro_f1=0.9279, best_epoch=4
+Epoch 10: val_accuracy=0.9397, val_macro_f1=0.9317, best_epoch=10
+Epoch 15: val_accuracy=0.9240, val_macro_f1=0.9135, best_epoch=12
+Epoch 20: val_accuracy=0.9322, val_macro_f1=0.9212, best_epoch=12
+Epoch 25: val_accuracy=0.9344, val_macro_f1=0.9248, best_epoch=12
+Epoch 30: val_accuracy=0.9338, val_macro_f1=0.9241, best_epoch=12
+Epoch 35: val_accuracy=0.9401, val_macro_f1=0.9312, best_epoch=12
+{
+  "status": "trained",
+  "architecture": "YOLOv8n-cls",
+  "ultralytics": "8.3.253",
+  "torch": "2.8.0+cpu",
+  "device": "cpu",
+  "image_size": 224,
+  "method": "Transfer learning: ImageNet pretrained backbone frozen; final 1280-to-3 linear classifier trained.",
+  "augmentation": "Original and horizontal-flipped training images; 15% feature dropout",
+  "preprocessing": "EXIF transpose, RGB, aspect-preserving 224x224 padding (114,114,114), divide by 255",
+  "train_images": 15691,
+  "train_feature_vectors": 31382,
+  "validation_images": 3186,
+  "test_used_for_training_or_selection": false,
+  "seed": 42,
+  "epochs_completed": 37,
+  "best_epoch": 12,
+  "selection_metric": "validation macro F1",
+  "head_training_seconds": 32.86666150600013,
+  "initial_weights_sha256": "11fa19f2aea79bc960d680a13f82f22105982b325eb9e17a4a5e1a9f8245980a",
+  "manifest_sha256": "c35527ae77c64f436fe36b5420be839f4d13444fcfce3d8e30cd40cce44d50cc",
+  "validation": {
+    "accuracy": 0.9387947269303202,
+    "macro_f1": 0.9321688367251233,
+    "per_class": {
+      "metal": {
+        "precision": 0.9008620689655172,
+        "recall": 0.9186813186813186,
+        "f1": 0.9096844396082698,
+        "support": 455
+      },
+      "other": {
+        "precision": 0.9468223086900129,
+        "recall": 0.944372574385511,
+        "f1": 0.9455958549222798,
+        "support": 1546
+      },
+      "plastic": {
+        "precision": 0.9432203389830508,
+        "recall": 0.9392405063291139,
+        "f1": 0.9412262156448202,
+        "support": 1185
+      }
+    },
+    "confusion_matrix": [
+      [
+        418,
+        24,
+        13
+      ],
+      [
+        32,
+        1460,
+        54
+      ],
+      [
+        14,
+        58,
+        1113
+      ]
+    ],
+    "class_order": [
+      "metal",
+      "other",
+      "plastic"
+    ],
+    "sample_count": 3186
+  },
+  "trainable_parameter_count": 3843
+}

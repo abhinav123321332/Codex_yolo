@@ -1,0 +1,15 @@
+{
+  "architecture": "YOLOv8n-cls",
+  "task": "classify",
+  "classes": [
+    "metal",
+    "other",
+    "plastic"
+  ],
+  "image_size": 224,
+  "preprocessing": "EXIF transpose, RGB, aspect-preserving 224x224 padding (114,114,114), divide by 255",
+  "default_confidence_threshold": 0.8,
+  "default_margin_threshold": 0.15,
+  "thresholds_calibrated": false,
+  "training_method": "Transfer learning: ImageNet pretrained backbone frozen; final 1280-to-3 linear classifier trained."
+}

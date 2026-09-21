@@ -1,0 +1,46 @@
+[
+  {
+    "ref": "mayankbansal2205/multi-class-waste-image-classification-dataset",
+    "title": "Multi-Class Waste Image Classification Dataset",
+    "creatorName": "Mayank Bansal",
+    "ownerName": "Mayank Bansal",
+    "url": "",
+    "licenseName": "Attribution 4.0 International (CC BY 4.0)",
+    "currentVersionNumber": 2,
+    "lastUpdated": "2026-04-30T09:20:42.137Z",
+    "totalBytes": 289116968
+  },
+  {
+    "ref": "chethuhn/water-bottle-dataset",
+    "title": "Water Bottle Image Classification Dataset",
+    "creatorName": "Chethan H N",
+    "ownerName": "Chethan H N",
+    "url": "",
+    "licenseName": "CC0: Public Domain",
+    "currentVersionNumber": 1,
+    "lastUpdated": "2023-01-06T01:51:30.05Z",
+    "totalBytes": 68327749
+  },
+  {
+    "ref": "siddharthkumarsah/plastic-bottles-image-dataset",
+    "title": "Plastic Bottles in the wild Image Dataset",
+    "creatorName": "Siddharth Kumar",
+    "ownerName": "Siddharth Kumar",
+    "url": "",
+    "licenseName": "Attribution 4.0 International (CC BY 4.0)",
+    "currentVersionNumber": 2,
+    "lastUpdated": "2023-03-04T07:51:25.437Z",
+    "totalBytes": 1706934045
+  },
+  {
+    "ref": "sumn2u/garbage-classification-v2",
+    "title": "Garbage Dataset",
+    "creatorName": "Suman Kunwar",
+    "ownerName": "Suman Kunwar",
+    "url": "",
+    "licenseName": "MIT",
+    "currentVersionNumber": 12,
+    "lastUpdated": "2026-02-23T00:36:31.49Z",
+    "totalBytes": 1167553792
+  }
+]

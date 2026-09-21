@@ -1,0 +1,249 @@
+{
+  "accuracy": 0.9405627568763831,
+  "macro_f1": 0.9269209090238636,
+  "per_class": {
+    "metal": {
+      "precision": 0.8760330578512396,
+      "recall": 0.8932584269662921,
+      "f1": 0.8845618915159944,
+      "support": 356
+    },
+    "other": {
+      "precision": 0.9478827361563518,
+      "recall": 0.9411384217335058,
+      "f1": 0.9444985394352482,
+      "support": 1546
+    },
+    "plastic": {
+      "precision": 0.950197628458498,
+      "recall": 0.9532117367168914,
+      "f1": 0.9517022961203483,
+      "support": 1261
+    }
+  },
+  "confusion_matrix": [
+    [
+      318,
+      30,
+      8
+    ],
+    [
+      36,
+      1455,
+      55
+    ],
+    [
+      9,
+      50,
+      1202
+    ]
+  ],
+  "class_order": [
+    "metal",
+    "other",
+    "plastic"
+  ],
+  "sample_count": 3163,
+  "split": "test",
+  "evaluation_seconds": 35.92490143100008,
+  "threshold": 0.8,
+  "margin": 0.15,
+  "thresholds_calibrated": false,
+  "confident_coverage": 0.8596269364527347,
+  "confident_accuracy": 0.9830820154468555,
+  "by_source": {
+    "garbage_v12": {
+      "accuracy": 0.922784121805329,
+      "macro_f1": 0.8517634253214067,
+      "per_class": {
+        "metal": {
+          "precision": 0.7659574468085106,
+          "recall": 0.7714285714285715,
+          "f1": 0.7686832740213523,
+          "support": 140
+        },
+        "other": {
+          "precision": 0.9642857142857143,
+          "recall": 0.9431506849315069,
+          "f1": 0.953601108033241,
+          "support": 1460
+        },
+        "plastic": {
+          "precision": 0.7851851851851852,
+          "recall": 0.8870292887029289,
+          "f1": 0.8330058939096269,
+          "support": 239
+        }
+      },
+      "confusion_matrix": [
+        [
+          108,
+          26,
+          6
+        ],
+        [
+          31,
+          1377,
+          52
+        ],
+        [
+          2,
+          25,
+          212
+        ]
+      ],
+      "class_order": [
+        "metal",
+        "other",
+        "plastic"
+      ],
+      "sample_count": 1839
+    },
+    "uploaded": {
+      "accuracy": 0.9976958525345622,
+      "macro_f1": 0.6651216355969463,
+      "per_class": {
+        "metal": {
+          "precision": 1.0,
+          "recall": 0.9950248756218906,
+          "f1": 0.9975062344139651,
+          "support": 201
+        },
+        "other": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 0
+        },
+        "plastic": {
+          "precision": 0.9957264957264957,
+          "recall": 1.0,
+          "f1": 0.9978586723768736,
+          "support": 233
+        }
+      },
+      "confusion_matrix": [
+        [
+          200,
+          0,
+          1
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          233
+        ]
+      ],
+      "class_order": [
+        "metal",
+        "other",
+        "plastic"
+      ],
+      "sample_count": 434
+    },
+    "wastesnap_v2": {
+      "accuracy": 0.8508771929824561,
+      "macro_f1": 0.7449849170437405,
+      "per_class": {
+        "metal": {
+          "precision": 0.5882352941176471,
+          "recall": 0.6666666666666666,
+          "f1": 0.625,
+          "support": 15
+        },
+        "other": {
+          "precision": 0.9285714285714286,
+          "recall": 0.9069767441860465,
+          "f1": 0.9176470588235294,
+          "support": 86
+        },
+        "plastic": {
+          "precision": 0.6923076923076923,
+          "recall": 0.6923076923076923,
+          "f1": 0.6923076923076923,
+          "support": 13
+        }
+      },
+      "confusion_matrix": [
+        [
+          10,
+          4,
+          1
+        ],
+        [
+          5,
+          78,
+          3
+        ],
+        [
+          2,
+          2,
+          9
+        ]
+      ],
+      "class_order": [
+        "metal",
+        "other",
+        "plastic"
+      ],
+      "sample_count": 114
+    },
+    "wild_bottles": {
+      "accuracy": 0.9639175257731959,
+      "macro_f1": 0.32720909886264216,
+      "per_class": {
+        "metal": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 0
+        },
+        "other": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 0
+        },
+        "plastic": {
+          "precision": 1.0,
+          "recall": 0.9639175257731959,
+          "f1": 0.9816272965879265,
+          "support": 776
+        }
+      },
+      "confusion_matrix": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          5,
+          23,
+          748
+        ]
+      ],
+      "class_order": [
+        "metal",
+        "other",
+        "plastic"
+      ],
+      "sample_count": 776
+    }
+  },
+  "accuracy_95pct_group_bootstrap_interval": [
+    0.928957270000279,
+    0.9521143959304359
+  ],
+  "test_group_count": 2438
+}

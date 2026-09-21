@@ -1,0 +1,9 @@
+{
+  "pixel_sha256_cross_split_overlaps": 0,
+  "group_cross_split_overlaps": 0,
+  "origin_group_cross_split_overlaps": 0,
+  "missing_images": 0,
+  "records": 22040,
+  "manifest_sha256": "c35527ae77c64f436fe36b5420be839f4d13444fcfce3d8e30cd40cce44d50cc",
+  "status": "passed"
+}

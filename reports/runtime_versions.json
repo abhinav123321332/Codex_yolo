@@ -1,0 +1,11 @@
+{
+  "torch": "2.8.0+cpu",
+  "torchvision": "0.23.0+cpu",
+  "ultralytics": "8.3.253",
+  "onnx": "1.19.0",
+  "onnxruntime": "1.23.2",
+  "numpy": "2.3.5",
+  "Pillow": "12.3.0",
+  "matplotlib": "3.10.8",
+  "opencv-python": "5.0.0.93"
+}

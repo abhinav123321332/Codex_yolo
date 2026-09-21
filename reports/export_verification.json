@@ -1,0 +1,11 @@
+{
+  "status": "passed",
+  "checked_images": 9,
+  "maximum_absolute_probability_difference": 6.854534149169922e-07,
+  "top1_classes_match": true,
+  "onnx_structural_check": "passed",
+  "opset": 17,
+  "dynamic_batch": true,
+  "input": "float32 RGB NCHW; 224x224 padding; divide by 255",
+  "output": "softmax probabilities in metadata class order"
+}

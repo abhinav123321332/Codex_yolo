@@ -1,0 +1,24 @@
+{
+  "images": 3849,
+  "classes": {
+    "metal": 1988,
+    "plastic": 1861
+  },
+  "splits": {
+    "train/metal": 1599,
+    "train/plastic": 1479,
+    "val/metal": 389,
+    "val/plastic": 382
+  },
+  "sizes": {
+    "(640, 640)": 3849
+  },
+  "corrupt": [],
+  "duplicate_pixel_groups": 0,
+  "duplicate_pixel_extra_images": 0,
+  "cross_split_pixel_groups": 0,
+  "conflicting_pixel_groups": 0,
+  "repeated_base_name_groups": 0,
+  "cross_split_base_name_groups": 0,
+  "bounding_box_annotations": 0
+}

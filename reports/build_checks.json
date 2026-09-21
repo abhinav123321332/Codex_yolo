@@ -1,0 +1,9 @@
+{
+  "python_syntax": "passed",
+  "onnx_prediction_cli": "passed",
+  "pytorch_prediction_cli": "passed",
+  "notebook_json_and_required_fields": "passed",
+  "colab_execution": "not run",
+  "optional_end_to_end_finetuning": "not run",
+  "physical_camera_test": "not run"
+}

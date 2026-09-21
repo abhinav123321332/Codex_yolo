@@ -1,0 +1,1799 @@
+{
+  "classes": [
+    "metal",
+    "other",
+    "plastic"
+  ],
+  "seed": 42,
+  "candidate_counts": {
+    "uploaded": 3849,
+    "wild_bottles": 5493,
+    "garbage_v12": 12259,
+    "wastesnap_v2": 770
+  },
+  "retained_images": 22040,
+  "split_counts": {
+    "test/metal": 356,
+    "test/other": 1546,
+    "test/plastic": 1261,
+    "train/metal": 2203,
+    "train/other": 7214,
+    "train/plastic": 6274,
+    "val/metal": 455,
+    "val/other": 1546,
+    "val/plastic": 1185
+  },
+  "source_split_counts": {
+    "garbage_v12/test": 1839,
+    "garbage_v12/train": 8579,
+    "garbage_v12/val": 1841,
+    "uploaded/test": 434,
+    "uploaded/train": 2966,
+    "uploaded/val": 449,
+    "wastesnap_v2/test": 114,
+    "wastesnap_v2/train": 529,
+    "wastesnap_v2/val": 114,
+    "wild_bottles/test": 776,
+    "wild_bottles/train": 3617,
+    "wild_bottles/val": 782
+  },
+  "exact_duplicates_removed": 17,
+  "conflicting_exact_hashes": 0,
+  "images_excluded_in_conflicting_groups": 0,
+  "perceptual_group_links": 1166,
+  "groups": 16125,
+  "errors_or_tiny_crops": [
+    {
+      "source": "wild_bottles",
+      "member": "Plastic Bottle Image Dataset/test/images/bottle-208-_JPG.rf.735985d60ddb924c219f923adfbd0f82.jpg",
+      "reason": "invalid bounding box"
+    },
+    {
+      "source": "wild_bottles",
+      "member": "Plastic Bottle Image Dataset/test/images/bottle-280-_JPG.rf.95e4c5fa004537f4d8b49c101c4b1847.jpg",
+      "reason": "invalid bounding box"
+    },
+    {
+      "source": "wild_bottles",
+      "member": "Plastic Bottle Image Dataset/test/images/bottle-334-_JPG.rf.e2925e5dd3dce14a85da6cf35bd53033.jpg",
+      "reason": "invalid bounding box"
+    },
+    {
+      "source": "wild_bottles",
+      "member": "Plastic Bottle Image Dataset/test/images/bottle-395-_JPG.rf.8860771fb3b48c98bbd007b5b37a3d40.jpg",
+      "reason": "invalid bounding box"
+    },
+    {
+      "source": "wild_bottles",
+      "member": "Plastic Bottle Image Dataset/train/images/-148_jpg.rf.63215d6bd2da9985ea8faec6fc097b53.jpg",
+      "reason": "invalid bounding box"
+    },
+    {
+      "source": "wild_bottles",
+      "member": "Plastic Bottle Image Dataset/train/images/-89_jpg.rf.8055536a16389632019a09550172ce87.jpg",
+      "reason": "invalid bounding box"
+    },
+    {
+      "source": "wild_bottles",
+      "member": "Plastic Bottle Image Dataset/train/images/-89_jpg.rf.8055536a16389632019a09550172ce87.jpg",
+      "reason": "invalid bounding box"
+    },
+    {
+      "source": "wild_bottles",
+      "member": "Plastic Bottle Image Dataset/train/images/0224022428_jpg.rf.d76bd38f749ce831bdf67f960d6c22b5.jpg",
+      "reason": "invalid polygon coordinates"
+    },
+    {
+      "source": "wild_bottles",
+      "member": "Plastic Bottle Image Dataset/train/images/100026_jpg.rf.6efedb889a61f0897bc771237bf94113.jpg",
+      "reason": "invalid bounding box"
+    },
+    {
+      "source": "wild_bottles",
+      "member": "Plastic Bottle Image Dataset/train/images/700307_jpg.rf.a2cd0b858749c4b41f2879f2019fb830.jpg",
+      "reason": "invalid bounding box"
+    },
+    {
+      "source": "wild_bottles",
+      "member": "Plastic Bottle Image Dataset/train/images/Edited_7283263_NPL_700mL_FR_png.rf.23bb6464bbb80913af962325315cb869.jpg",
+      "reason": "invalid polygon coordinates"
+    },
+    {
+      "source": "wild_bottles",
+      "member": "Plastic Bottle Image Dataset/train/images/WhatsApp-Image-2022-08-09-at-12-56-18_jpeg.rf.13a35fb6edf60eddd03166f9d4eca8f2.jpg",
+      "reason": "invalid polygon coordinates"
+    },
+    {
+      "source": "wild_bottles",
+      "member": "Plastic Bottle Image Dataset/train/images/image_png.rf.1a276c55e373ab8b9f54b8edc3ef2b1d.jpg",
+      "reason": "invalid polygon coordinates"
+    },
+    {
+      "source": "wild_bottles",
+      "member": "Plastic Bottle Image Dataset/train/images/image_png.rf.1a276c55e373ab8b9f54b8edc3ef2b1d.jpg",
+      "reason": "invalid polygon coordinates"
+    },
+    {
+      "source": "wild_bottles",
+      "member": "Plastic Bottle Image Dataset/train/images/image_png.rf.1a276c55e373ab8b9f54b8edc3ef2b1d.jpg",
+      "reason": "invalid polygon coordinates"
+    },
+    {
+      "source": "wild_bottles",
+      "member": "Plastic Bottle Image Dataset/train/images/kjhlkklu_png.rf.a782c10092282ef6bbb400bc6bfd2c60.jpg",
+      "reason": "invalid polygon coordinates"
+    },
+    {
+      "source": "wild_bottles",
+      "member": "Plastic Bottle Image Dataset/train/images/water-bottles_jpg.rf.7f2cf644e7b419c297daade95476a192.jpg",
+      "reason": "invalid polygon coordinates"
+    },
+    {
+      "source": "wild_bottles",
+      "member": "Plastic Bottle Image Dataset/train/images/water-bottles_jpg.rf.7f2cf644e7b419c297daade95476a192.jpg",
+      "reason": "invalid polygon coordinates"
+    },
+    {
+      "source": "wild_bottles",
+      "member": "Plastic Bottle Image Dataset/train/images/water-bottles_jpg.rf.7f2cf644e7b419c297daade95476a192.jpg",
+      "reason": "invalid polygon coordinates"
+    },
+    {
+      "source": "wild_bottles",
+      "member": "Plastic Bottle Image Dataset/valid/images/0218091658_jpg.rf.29db340a9f7cb89498a89f0564da33de.jpg",
+      "reason": "invalid polygon coordinates"
+    },
+    {
+      "source": "wild_bottles",
+      "member": "Plastic Bottle Image Dataset/valid/images/0218091738_jpg.rf.ccfd3bf538170831da267c370279c615.jpg",
+      "reason": "invalid polygon coordinates"
+    },
+    {
+      "source": "wild_bottles",
+      "member": "Plastic Bottle Image Dataset/valid/images/0218091807_jpg.rf.895fef326cb25f1a2dca0d7f0a28df0a.jpg",
+      "reason": "invalid polygon coordinates"
+    },
+    {
+      "source": "wild_bottles",
+      "member": "Plastic Bottle Image Dataset/valid/images/bottle-114-_JPG.rf.8af803a06e46de803461b67422913c3c.jpg",
+      "reason": "invalid bounding box"
+    },
+    {
+      "source": "wild_bottles",
+      "member": "Plastic Bottle Image Dataset/valid/images/bottle-159-_JPG.rf.e11ae57f5ca4873747d2d8eb355644a0.jpg",
+      "reason": "invalid bounding box"
+    },
+    {
+      "source": "wild_bottles",
+      "member": "Plastic Bottle Image Dataset/valid/images/bottle-164-_JPG.rf.034c20cc32d9c5a947832d0757e96699.jpg",
+      "reason": "invalid bounding box"
+    },
+    {
+      "source": "wild_bottles",
+      "member": "Plastic Bottle Image Dataset/valid/images/bottle-17-_JPG.rf.eed17ff63f9d02e56742456330f3ab8e.jpg",
+      "reason": "invalid bounding box"
+    },
+    {
+      "source": "wild_bottles",
+      "member": "Plastic Bottle Image Dataset/valid/images/bottle-222-_JPG.rf.933540bdd8b7c5f43b24059dd7c42d2e.jpg",
+      "reason": "invalid bounding box"
+    },
+    {
+      "source": "wild_bottles",
+      "member": "Plastic Bottle Image Dataset/valid/images/bottle-319-_JPG.rf.f66006de93c868c305e3f67b3933124b.jpg",
+      "reason": "invalid bounding box"
+    },
+    {
+      "source": "wild_bottles",
+      "member": "Plastic Bottle Image Dataset/valid/images/bottle-503-_JPG.rf.f458014b4ceae9194346df51b6163e9f.jpg",
+      "reason": "invalid bounding box"
+    },
+    {
+      "source": "wild_bottles",
+      "member": "Plastic Bottle Image Dataset/valid/images/bottle-531-_JPG.rf.25bf6a63d944f722acc3078ff5830e16.jpg",
+      "reason": "invalid bounding box"
+    },
+    {
+      "source": "wild_bottles",
+      "member": "Plastic Bottle Image Dataset/valid/images/bottle-556-_JPG.rf.6750fb1cb0bfe87e36f2a9142ffce7fe.jpg",
+      "reason": "invalid bounding box"
+    },
+    {
+      "source": "wild_bottles",
+      "member": "Plastic Bottle Image Dataset/valid/images/bottle-616-_JPG.rf.70fed417934be3122334f8ef2c483428.jpg",
+      "reason": "invalid bounding box"
+    },
+    {
+      "source": "wild_bottles",
+      "member": "Plastic Bottle Image Dataset/valid/images/bottle-622-_JPG.rf.c3deea51b2d61e2ed5f0e0b9ee670afb.jpg",
+      "reason": "invalid bounding box"
+    },
+    {
+      "source": "wild_bottles",
+      "member": "Plastic Bottle Image Dataset/valid/images/bottle-702-_JPG.rf.ba25f65e0e03da33881eced209116d40.jpg",
+      "reason": "invalid bounding box"
+    },
+    {
+      "source": "wild_bottles",
+      "member": "Plastic Bottle Image Dataset/valid/images/bottle-79-_JPG.rf.c0024c9656d455f0d2a3815f6eb9c680.jpg",
+      "reason": "invalid bounding box"
+    },
+    {
+      "source": "wild_bottles",
+      "member": "Plastic Bottle Image Dataset/test/images/-171_jpg.rf.513b40a00a8128949d034c41662c0c59.jpg",
+      "reason": "crop smaller than 24 pixels"
+    },
+    {
+      "source": "wild_bottles",
+      "member": "Plastic Bottle Image Dataset/test/images/-171_jpg.rf.513b40a00a8128949d034c41662c0c59.jpg",
+      "reason": "crop smaller than 24 pixels"
+    },
+    {
+      "source": "wild_bottles",
+      "member": "Plastic Bottle Image Dataset/test/images/-171_jpg.rf.513b40a00a8128949d034c41662c0c59.jpg",
+      "reason": "crop smaller than 24 pixels"
+    },
+    {
+      "source": "wild_bottles",
+      "member": "Plastic Bottle Image Dataset/test/images/100296_jpg.rf.eafd3e47abc76945f697bca85492851f.jpg",
+      "reason": "crop smaller than 24 pixels"
+    },
+    {
+      "source": "wild_bottles",
+      "member": "Plastic Bottle Image Dataset/test/images/100308_jpg.rf.cea3044fca4db366d97e2fe1b8994a1a.jpg",
+      "reason": "crop smaller than 24 pixels"
+    },
+    {
+      "source": "wild_bottles",
+      "member": "Plastic Bottle Image Dataset/test/images/200155_jpg.rf.888df82d6af8251a0f9904682c629a78.jpg",
+      "reason": "crop smaller than 24 pixels"
+    },
+    {
+      "source": "wild_bottles",
+      "member": "Plastic Bottle Image Dataset/test/images/20_jpg.rf.c637a9b24f96f2671be1e011ee189a6b.jpg",
+      "reason": "crop smaller than 24 pixels"
+    },
+    {
+      "source": "wild_bottles",
+      "member": "Plastic Bottle Image Dataset/test/images/25_jpg.rf.442c800d667cfa1019930f957b9a04fb.jpg",
+      "reason": "crop smaller than 24 pixels"
+    },
+    {
+      "source": "wild_bottles",
+      "member": "Plastic Bottle Image Dataset/test/images/56_jpg.rf.edae0a1dfb5a74e2dc93d2df570f7206.jpg",
+      "reason": "crop smaller than 24 pixels"
+    },
+    {
+      "source": "wild_bottles",
+      "member": "Plastic Bottle Image Dataset/test/images/700016_jpg.rf.356811daf13a4e3290cae83cd3d68a02.jpg",
+      "reason": "crop smaller than 24 pixels"
+    },
+    {
+      "source": "wild_bottles",
+      "member": "Plastic Bottle Image Dataset/test/images/bottle-100-_JPG.rf.784bdac5535ec63e4092b62965109edf.jpg",
+      "reason": "crop smaller than 24 pixels"
+    },
+    {
+      "source": "wild_bottles",
+      "member": "Plastic Bottle Image Dataset/test/images/bottle-275-_JPG.rf.a8277a9cdb32eb905d1a058ef0cd87b6.jpg",
+      "reason": "crop smaller than 24 pixels"
+    },
+    {
+      "source": "wild_bottles",
+      "member": "Plastic Bottle Image Dataset/test/images/bottle-328-_JPG.rf.6d7a08bd1bf43ad2590e529197742278.jpg",
+      "reason": "crop smaller than 24 pixels"
+    },
+    {
+      "source": "wild_bottles",
+      "member": "Plastic Bottle Image Dataset/test/images/bottle-337-_JPG.rf.3dd4184ca8afbc7d3ad179bfbbeb3a98.jpg",
+      "reason": "crop smaller than 24 pixels"
+    },
+    {
+      "source": "wild_bottles",
+      "member": "Plastic Bottle Image Dataset/test/images/bottle-37-_JPG.rf.1a8ef7b8461d4abf436e73f1b6373161.jpg",
+      "reason": "crop smaller than 24 pixels"
+    },
+    {
+      "source": "wild_bottles",
+      "member": "Plastic Bottle Image Dataset/test/images/bottle-439-_JPG.rf.932e062ac28729c71becc63111a8b91f.jpg",
+      "reason": "crop smaller than 24 pixels"
+    },
+    {
+      "source": "wild_bottles",
+      "member": "Plastic Bottle Image Dataset/test/images/bottle-547-_JPG.rf.332db48f7b5b6917db71926d4bd4ab0d.jpg",
+      "reason": "crop smaller than 24 pixels"
+    },
+    {
+      "source": "wild_bottles",
+      "member": "Plastic Bottle Image Dataset/test/images/bottle-610-_JPG.rf.43a749794f7e80ebd040777a600b8c29.jpg",
+      "reason": "crop smaller than 24 pixels"
+    },
+    {
+      "source": "wild_bottles",
+      "member": "Plastic Bottle Image Dataset/test/images/bottle-792-_jpg.rf.6e0f170c92eba7e7b2f58edfd820eac2.jpg",
+      "reason": "crop smaller than 24 pixels"
+    },
+    {
+      "source": "wild_bottles",
+      "member": "Plastic Bottle Image Dataset/test/images/istockphoto-1194298151-612x612_jpg.rf.7929931f21637983958af7a153cdf103.jpg",
+      "reason": "crop smaller than 24 pixels"
+    },
+    {
+      "source": "wild_bottles",
+      "member": "Plastic Bottle Image Dataset/test/images/istockphoto-492152678-612x612_jpg.rf.29e4152bebfe2e8d0a92f65967fec34d.jpg",
+      "reason": "crop smaller than 24 pixels"
+    },
+    {
+      "source": "wild_bottles",
+      "member": "Plastic Bottle Image Dataset/test/images/plastic-bottle-12007493_jpg.rf.9f7767b03fbe2fac9bfcf62cee674960.jpg",
+      "reason": "crop smaller than 24 pixels"
+    },
+    {
+      "source": "wild_bottles",
+      "member": "Plastic Bottle Image Dataset/test/images/plastic254_jpg.rf.04cb144f5e790dacd3936eddd748a9d2.jpg",
+      "reason": "crop smaller than 24 pixels"
+    },
+    {
+      "source": "wild_bottles",
+      "member": "Plastic Bottle Image Dataset/train/images/-10_jpg.rf.b4d6caa7b0bb4ea53635edd7578711be.jpg",
+      "reason": "crop smaller than 24 pixels"
+    },
+    {
+      "source": "wild_bottles",
+      "member": "Plastic Bottle Image Dataset/train/images/-10_jpg.rf.b4d6caa7b0bb4ea53635edd7578711be.jpg",
+      "reason": "crop smaller than 24 pixels"
+    },
+    {
+      "source": "wild_bottles",
+      "member": "Plastic Bottle Image Dataset/train/images/-10_jpg.rf.b4d6caa7b0bb4ea53635edd7578711be.jpg",
+      "reason": "crop smaller than 24 pixels"
+    },
+    {
+      "source": "wild_bottles",
+      "member": "Plastic Bottle Image Dataset/train/images/-148_jpg.rf.63215d6bd2da9985ea8faec6fc097b53.jpg",
+      "reason": "crop smaller than 24 pixels"
+    },
+    {
+      "source": "wild_bottles",
+      "member": "Plastic Bottle Image Dataset/train/images/-148_jpg.rf.63215d6bd2da9985ea8faec6fc097b53.jpg",
+      "reason": "crop smaller than 24 pixels"
+    },
+    {
+      "source": "wild_bottles",
+      "member": "Plastic Bottle Image Dataset/train/images/-170_jpg.rf.1324df71588dccc1698bbfb8d437f33b.jpg",
+      "reason": "crop smaller than 24 pixels"
+    },
+    {
+      "source": "wild_bottles",
+      "member": "Plastic Bottle Image Dataset/train/images/-172_jpg.rf.bd10dc0bad10133387f4d625d53052c0.jpg",
+      "reason": "crop smaller than 24 pixels"
+    },
+    {
+      "source": "wild_bottles",
+      "member": "Plastic Bottle Image Dataset/train/images/-172_jpg.rf.bd10dc0bad10133387f4d625d53052c0.jpg",
+      "reason": "crop smaller than 24 pixels"
+    },
+    {
+      "source": "wild_bottles",
+      "member": "Plastic Bottle Image Dataset/train/images/-172_jpg.rf.bd10dc0bad10133387f4d625d53052c0.jpg",
+      "reason": "crop smaller than 24 pixels"
+    },
+    {
+      "source": "wild_bottles",
+      "member": "Plastic Bottle Image Dataset/train/images/-172_jpg.rf.bd10dc0bad10133387f4d625d53052c0.jpg",
+      "reason": "crop smaller than 24 pixels"
+    },
+    {
+      "source": "wild_bottles",
+      "member": "Plastic Bottle Image Dataset/train/images/-172_jpg.rf.bd10dc0bad10133387f4d625d53052c0.jpg",
+      "reason": "crop smaller than 24 pixels"
+    },
+    {
+      "source": "wild_bottles",
+      "member": "Plastic Bottle Image Dataset/train/images/-172_jpg.rf.bd10dc0bad10133387f4d625d53052c0.jpg",
+      "reason": "crop smaller than 24 pixels"
+    },
+    {
+      "source": "wild_bottles",
+      "member": "Plastic Bottle Image Dataset/train/images/-172_jpg.rf.bd10dc0bad10133387f4d625d53052c0.jpg",
+      "reason": "crop smaller than 24 pixels"
+    },
+    {
+      "source": "wild_bottles",
+      "member": "Plastic Bottle Image Dataset/train/images/-172_jpg.rf.bd10dc0bad10133387f4d625d53052c0.jpg",
+      "reason": "crop smaller than 24 pixels"
+    },
+    {
+      "source": "wild_bottles",
+      "member": "Plastic Bottle Image Dataset/train/images/-182_jpg.rf.60ae1e0db0256b0b0aef8621c0239684.jpg",
+      "reason": "crop smaller than 24 pixels"
+    },
+    {
+      "source": "wild_bottles",
+      "member": "Plastic Bottle Image Dataset/train/images/-182_jpg.rf.60ae1e0db0256b0b0aef8621c0239684.jpg",
+      "reason": "crop smaller than 24 pixels"
+    },
+    {
+      "source": "wild_bottles",
+      "member": "Plastic Bottle Image Dataset/train/images/-182_jpg.rf.60ae1e0db0256b0b0aef8621c0239684.jpg",
+      "reason": "crop smaller than 24 pixels"
+    },
+    {
+      "source": "wild_bottles",
+      "member": "Plastic Bottle Image Dataset/train/images/-182_jpg.rf.60ae1e0db0256b0b0aef8621c0239684.jpg",
+      "reason": "crop smaller than 24 pixels"
+    },
+    {
+      "source": "wild_bottles",
+      "member": "Plastic Bottle Image Dataset/train/images/-182_jpg.rf.60ae1e0db0256b0b0aef8621c0239684.jpg",
+      "reason": "crop smaller than 24 pixels"
+    },
+    {
+      "source": "wild_bottles",
+      "member": "Plastic Bottle Image Dataset/train/images/-182_jpg.rf.60ae1e0db0256b0b0aef8621c0239684.jpg",
+      "reason": "crop smaller than 24 pixels"
+    },
+    {
+      "source": "wild_bottles",
+      "member": "Plastic Bottle Image Dataset/train/images/-222_jpg.rf.4d50e782e1b2f0d130d6be8019edc752.jpg",
+      "reason": "crop smaller than 24 pixels"
+    },
+    {
+      "source": "wild_bottles",
+      "member": "Plastic Bottle Image Dataset/train/images/-222_jpg.rf.4d50e782e1b2f0d130d6be8019edc752.jpg",
+      "reason": "crop smaller than 24 pixels"
+    },
+    {
+      "source": "wild_bottles",
+      "member": "Plastic Bottle Image Dataset/train/images/-229_jpg.rf.ce473e9c11299eb1dce566af8634b702.jpg",
+      "reason": "crop smaller than 24 pixels"
+    },
+    {
+      "source": "wild_bottles",
+      "member": "Plastic Bottle Image Dataset/train/images/-229_jpg.rf.ce473e9c11299eb1dce566af8634b702.jpg",
+      "reason": "crop smaller than 24 pixels"
+    },
+    {
+      "source": "wild_bottles",
+      "member": "Plastic Bottle Image Dataset/train/images/-240_jpg.rf.29afda333761e785b1f1d2c244d647a9.jpg",
+      "reason": "crop smaller than 24 pixels"
+    },
+    {
+      "source": "wild_bottles",
+      "member": "Plastic Bottle Image Dataset/train/images/-240_jpg.rf.29afda333761e785b1f1d2c244d647a9.jpg",
+      "reason": "crop smaller than 24 pixels"
+    },
+    {
+      "source": "wild_bottles",
+      "member": "Plastic Bottle Image Dataset/train/images/-240_jpg.rf.29afda333761e785b1f1d2c244d647a9.jpg",
+      "reason": "crop smaller than 24 pixels"
+    },
+    {
+      "source": "wild_bottles",
+      "member": "Plastic Bottle Image Dataset/train/images/-258_jpg.rf.87d4f52388e310e9e89971ad3d8892c7.jpg",
+      "reason": "crop smaller than 24 pixels"
+    },
+    {
+      "source": "wild_bottles",
+      "member": "Plastic Bottle Image Dataset/train/images/-258_jpg.rf.87d4f52388e310e9e89971ad3d8892c7.jpg",
+      "reason": "crop smaller than 24 pixels"
+    },
+    {
+      "source": "wild_bottles",
+      "member": "Plastic Bottle Image Dataset/train/images/-258_jpg.rf.87d4f52388e310e9e89971ad3d8892c7.jpg",
+      "reason": "crop smaller than 24 pixels"
+    },
+    {
+      "source": "wild_bottles",
+      "member": "Plastic Bottle Image Dataset/train/images/-258_jpg.rf.87d4f52388e310e9e89971ad3d8892c7.jpg",
+      "reason": "crop smaller than 24 pixels"
+    },
+    {
+      "source": "wild_bottles",
+      "member": "Plastic Bottle Image Dataset/train/images/-258_jpg.rf.87d4f52388e310e9e89971ad3d8892c7.jpg",
+      "reason": "crop smaller than 24 pixels"
+    },
+    {
+      "source": "wild_bottles",
+      "member": "Plastic Bottle Image Dataset/train/images/-258_jpg.rf.87d4f52388e310e9e89971ad3d8892c7.jpg",
+      "reason": "crop smaller than 24 pixels"
+    },
+    {
+      "source": "wild_bottles",
+      "member": "Plastic Bottle Image Dataset/train/images/-290_jpg.rf.82e2deccd5d8c68c2c368afebb36d070.jpg",
+      "reason": "crop smaller than 24 pixels"
+    },
+    {
+      "source": "wild_bottles",
+      "member": "Plastic Bottle Image Dataset/train/images/-290_jpg.rf.82e2deccd5d8c68c2c368afebb36d070.jpg",
+      "reason": "crop smaller than 24 pixels"
+    },
+    {
+      "source": "wild_bottles",
+      "member": "Plastic Bottle Image Dataset/train/images/-302_jpg.rf.a72bf05d7fa698b7b84ad0f7317154b7.jpg",
+      "reason": "crop smaller than 24 pixels"
+    },
+    {
+      "source": "wild_bottles",
+      "member": "Plastic Bottle Image Dataset/train/images/-321_jpg.rf.1ad67d133181924ac962098eeedd3984.jpg",
+      "reason": "crop smaller than 24 pixels"
+    },
+    {
+      "source": "wild_bottles",
+      "member": "Plastic Bottle Image Dataset/train/images/-321_jpg.rf.1ad67d133181924ac962098eeedd3984.jpg",
+      "reason": "crop smaller than 24 pixels"
+    },
+    {
+      "source": "wild_bottles",
+      "member": "Plastic Bottle Image Dataset/train/images/-375_jpg.rf.5d96666170a0785087e6e7e9d8943bf2.jpg",
+      "reason": "crop smaller than 24 pixels"
+    },
+    {
+      "source": "wild_bottles",
+      "member": "Plastic Bottle Image Dataset/train/images/-375_jpg.rf.5d96666170a0785087e6e7e9d8943bf2.jpg",
+      "reason": "crop smaller than 24 pixels"
+    },
+    {
+      "source": "wild_bottles",
+      "member": "Plastic Bottle Image Dataset/train/images/-375_jpg.rf.5d96666170a0785087e6e7e9d8943bf2.jpg",
+      "reason": "crop smaller than 24 pixels"
+    },
+    {
+      "source": "wild_bottles",
+      "member": "Plastic Bottle Image Dataset/train/images/-375_jpg.rf.5d96666170a0785087e6e7e9d8943bf2.jpg",
+      "reason": "crop smaller than 24 pixels"
+    },
+    {
+      "source": "wild_bottles",
+      "member": "Plastic Bottle Image Dataset/train/images/-375_jpg.rf.5d96666170a0785087e6e7e9d8943bf2.jpg",
+      "reason": "crop smaller than 24 pixels"
+    },
+    {
+      "source": "wild_bottles",
+      "member": "Plastic Bottle Image Dataset/train/images/-375_jpg.rf.5d96666170a0785087e6e7e9d8943bf2.jpg",
+      "reason": "crop smaller than 24 pixels"
+    },
+    {
+      "source": "wild_bottles",
+      "member": "Plastic Bottle Image Dataset/train/images/-3_jpg.rf.57f2f3e2b250427aed2446b756b1b32d.jpg",
+      "reason": "crop smaller than 24 pixels"
+    },
+    {
+      "source": "wild_bottles",
+      "member": "Plastic Bottle Image Dataset/train/images/-424_jpg.rf.0767cfa6a88744f47cd7eae4324936cf.jpg",
+      "reason": "crop smaller than 24 pixels"
+    },
+    {
+      "source": "wild_bottles",
+      "member": "Plastic Bottle Image Dataset/train/images/-427_jpg.rf.b690cd8ef63d125e294c8c6815509afb.jpg",
+      "reason": "crop smaller than 24 pixels"
+    },
+    {
+      "source": "wild_bottles",
+      "member": "Plastic Bottle Image Dataset/train/images/-427_jpg.rf.b690cd8ef63d125e294c8c6815509afb.jpg",
+      "reason": "crop smaller than 24 pixels"
+    },
+    {
+      "source": "wild_bottles",
+      "member": "Plastic Bottle Image Dataset/train/images/-427_jpg.rf.b690cd8ef63d125e294c8c6815509afb.jpg",
+      "reason": "crop smaller than 24 pixels"
+    },
+    {
+      "source": "wild_bottles",
+      "member": "Plastic Bottle Image Dataset/train/images/-427_jpg.rf.b690cd8ef63d125e294c8c6815509afb.jpg",
+      "reason": "crop smaller than 24 pixels"
+    },
+    {
+      "source": "wild_bottles",
+      "member": "Plastic Bottle Image Dataset/train/images/-45_jpg.rf.bd1424d59c23374ac80090b7a4939937.jpg",
+      "reason": "crop smaller than 24 pixels"
+    },
+    {
+      "source": "wild_bottles",
+      "member": "Plastic Bottle Image Dataset/train/images/-45_jpg.rf.bd1424d59c23374ac80090b7a4939937.jpg",
+      "reason": "crop smaller than 24 pixels"
+    },
+    {
+      "source": "wild_bottles",
+      "member": "Plastic Bottle Image Dataset/train/images/-45_jpg.rf.bd1424d59c23374ac80090b7a4939937.jpg",
+      "reason": "crop smaller than 24 pixels"
+    },
+    {
+      "source": "wild_bottles",
+      "member": "Plastic Bottle Image Dataset/train/images/-54_jpg.rf.e18b9f9641c01717ae6fd7575e82b6f9.jpg",
+      "reason": "crop smaller than 24 pixels"
+    },
+    {
+      "source": "wild_bottles",
+      "member": "Plastic Bottle Image Dataset/train/images/-54_jpg.rf.e18b9f9641c01717ae6fd7575e82b6f9.jpg",
+      "reason": "crop smaller than 24 pixels"
+    },
+    {
+      "source": "wild_bottles",
+      "member": "Plastic Bottle Image Dataset/train/images/-54_jpg.rf.e18b9f9641c01717ae6fd7575e82b6f9.jpg",
+      "reason": "crop smaller than 24 pixels"
+    },
+    {
+      "source": "wild_bottles",
+      "member": "Plastic Bottle Image Dataset/train/images/-54_jpg.rf.e18b9f9641c01717ae6fd7575e82b6f9.jpg",
+      "reason": "crop smaller than 24 pixels"
+    },
+    {
+      "source": "wild_bottles",
+      "member": "Plastic Bottle Image Dataset/train/images/-7_jpg.rf.3822e67d455bd373bd53ade94c48a081.jpg",
+      "reason": "crop smaller than 24 pixels"
+    },
+    {
+      "source": "wild_bottles",
+      "member": "Plastic Bottle Image Dataset/train/images/-7_jpg.rf.3822e67d455bd373bd53ade94c48a081.jpg",
+      "reason": "crop smaller than 24 pixels"
+    },
+    {
+      "source": "wild_bottles",
+      "member": "Plastic Bottle Image Dataset/train/images/-7_jpg.rf.3822e67d455bd373bd53ade94c48a081.jpg",
+      "reason": "crop smaller than 24 pixels"
+    },
+    {
+      "source": "wild_bottles",
+      "member": "Plastic Bottle Image Dataset/train/images/-87_jpg.rf.28bc8a38318c8608e6cdf5cc78adb372.jpg",
+      "reason": "crop smaller than 24 pixels"
+    },
+    {
+      "source": "wild_bottles",
+      "member": "Plastic Bottle Image Dataset/train/images/-89_jpg.rf.8055536a16389632019a09550172ce87.jpg",
+      "reason": "crop smaller than 24 pixels"
+    },
+    {
+      "source": "wild_bottles",
+      "member": "Plastic Bottle Image Dataset/train/images/-89_jpg.rf.8055536a16389632019a09550172ce87.jpg",
+      "reason": "crop smaller than 24 pixels"
+    },
+    {
+      "source": "wild_bottles",
+      "member": "Plastic Bottle Image Dataset/train/images/-89_jpg.rf.8055536a16389632019a09550172ce87.jpg",
+      "reason": "crop smaller than 24 pixels"
+    },
+    {
+      "source": "wild_bottles",
+      "member": "Plastic Bottle Image Dataset/train/images/-89_jpg.rf.8055536a16389632019a09550172ce87.jpg",
+      "reason": "crop smaller than 24 pixels"
+    },
+    {
+      "source": "wild_bottles",
+      "member": "Plastic Bottle Image Dataset/train/images/00000005_jpg.rf.5110482c15f285b7cd5b825f57708267.jpg",
+      "reason": "crop smaller than 24 pixels"
+    },
+    {
+      "source": "wild_bottles",
+      "member": "Plastic Bottle Image Dataset/train/images/00000006_jpg.rf.43cc3ca542ffd92057e38d8e293269ad.jpg",
+      "reason": "crop smaller than 24 pixels"
+    },
+    {
+      "source": "wild_bottles",
+      "member": "Plastic Bottle Image Dataset/train/images/00000009_jpg.rf.7d76c7f3ccf3b77582bb84112bf8c6a0.jpg",
+      "reason": "crop smaller than 24 pixels"
+    },
+    {
+      "source": "wild_bottles",
+      "member": "Plastic Bottle Image Dataset/train/images/00000024_jpg.rf.437739813ed3eacefae8cfee6fcfdaed.jpg",
+      "reason": "crop smaller than 24 pixels"
+    },
+    {
+      "source": "wild_bottles",
+      "member": "Plastic Bottle Image Dataset/train/images/00000037_jpg.rf.e17a7c7ea76bc3cfb03cb5edcef09bc0.jpg",
+      "reason": "crop smaller than 24 pixels"
+    },
+    {
+      "source": "wild_bottles",
+      "member": "Plastic Bottle Image Dataset/train/images/00000037_jpg.rf.e17a7c7ea76bc3cfb03cb5edcef09bc0.jpg",
+      "reason": "crop smaller than 24 pixels"
+    },
+    {
+      "source": "wild_bottles",
+      "member": "Plastic Bottle Image Dataset/train/images/00000043_jpg.rf.92fddd96d14ad3e756a4ef8f83d1e320.jpg",
+      "reason": "crop smaller than 24 pixels"
+    },
+    {
+      "source": "wild_bottles",
+      "member": "Plastic Bottle Image Dataset/train/images/00000045_jpg.rf.163d0bca4231393b11b03c85b5d7806e.jpg",
+      "reason": "crop smaller than 24 pixels"
+    },
+    {
+      "source": "wild_bottles",
+      "member": "Plastic Bottle Image Dataset/train/images/00000047_jpg.rf.89d58a83a5759b32632f137adcf56372.jpg",
+      "reason": "crop smaller than 24 pixels"
+    },
+    {
+      "source": "wild_bottles",
+      "member": "Plastic Bottle Image Dataset/train/images/00000048_jpg.rf.daaa86d7b7ef5901c7aa881be0cbbef8.jpg",
+      "reason": "crop smaller than 24 pixels"
+    },
+    {
+      "source": "wild_bottles",
+      "member": "Plastic Bottle Image Dataset/train/images/00000048_jpg.rf.daaa86d7b7ef5901c7aa881be0cbbef8.jpg",
+      "reason": "crop smaller than 24 pixels"
+    },
+    {
+      "source": "wild_bottles",
+      "member": "Plastic Bottle Image Dataset/train/images/00000057_jpg.rf.6c7a28a6628dd66a6559ccb50d9751cf.jpg",
+      "reason": "crop smaller than 24 pixels"
+    },
+    {
+      "source": "wild_bottles",
+      "member": "Plastic Bottle Image Dataset/train/images/00000058_jpg.rf.9e924f88e4763bafb6052c9b218a2be6.jpg",
+      "reason": "crop smaller than 24 pixels"
+    },
+    {
+      "source": "wild_bottles",
+      "member": "Plastic Bottle Image Dataset/train/images/00000059_jpg.rf.c30fce51d0a6d3cb6d592211ce0a6558.jpg",
+      "reason": "crop smaller than 24 pixels"
+    },
+    {
+      "source": "wild_bottles",
+      "member": "Plastic Bottle Image Dataset/train/images/0224021753_jpg.rf.2b926ba71199ccc02d7b805f29a73fa9.jpg",
+      "reason": "crop smaller than 24 pixels"
+    },
+    {
+      "source": "wild_bottles",
+      "member": "Plastic Bottle Image Dataset/train/images/0224021805_jpg.rf.a0940d268977552ffa5f8ccc4d8d8c0a.jpg",
+      "reason": "crop smaller than 24 pixels"
+    },
+    {
+      "source": "wild_bottles",
+      "member": "Plastic Bottle Image Dataset/train/images/0224021817_jpg.rf.fd46698302f92193a15706214a05e884.jpg",
+      "reason": "crop smaller than 24 pixels"
+    },
+    {
+      "source": "wild_bottles",
+      "member": "Plastic Bottle Image Dataset/train/images/0224021838_jpg.rf.8117b0eec0a72ab5383a71cdd26115ad.jpg",
+      "reason": "crop smaller than 24 pixels"
+    },
+    {
+      "source": "wild_bottles",
+      "member": "Plastic Bottle Image Dataset/train/images/0224021849_jpg.rf.a9533121f4945550d2385e2716c40c9c.jpg",
+      "reason": "crop smaller than 24 pixels"
+    },
+    {
+      "source": "wild_bottles",
+      "member": "Plastic Bottle Image Dataset/train/images/0224021859_jpg.rf.78acb4ee9011dcbfb3ab8bc34d72ed0b.jpg",
+      "reason": "crop smaller than 24 pixels"
+    },
+    {
+      "source": "wild_bottles",
+      "member": "Plastic Bottle Image Dataset/train/images/0224021921_jpg.rf.d9e70611064db459426c04bcf661245f.jpg",
+      "reason": "crop smaller than 24 pixels"
+    },
+    {
+      "source": "wild_bottles",
+      "member": "Plastic Bottle Image Dataset/train/images/0224021934_jpg.rf.339b0d59223583dc9686c75775591eb8.jpg",
+      "reason": "crop smaller than 24 pixels"
+    },
+    {
+      "source": "wild_bottles",
+      "member": "Plastic Bottle Image Dataset/train/images/0224021947_jpg.rf.4b6478d3f899a11c8cc06f684ac81dbc.jpg",
+      "reason": "crop smaller than 24 pixels"
+    },
+    {
+      "source": "wild_bottles",
+      "member": "Plastic Bottle Image Dataset/train/images/0224022030_jpg.rf.ab7301ec2fdbd1e831e4806ea9780022.jpg",
+      "reason": "crop smaller than 24 pixels"
+    },
+    {
+      "source": "wild_bottles",
+      "member": "Plastic Bottle Image Dataset/train/images/0224022046_jpg.rf.29054185f0bb1e4199fece9cf0df3012.jpg",
+      "reason": "crop smaller than 24 pixels"
+    },
+    {
+      "source": "wild_bottles",
+      "member": "Plastic Bottle Image Dataset/train/images/0224022105_jpg.rf.af12ab12bcd2928f38dad7de3ff15c67.jpg",
+      "reason": "crop smaller than 24 pixels"
+    },
+    {
+      "source": "wild_bottles",
+      "member": "Plastic Bottle Image Dataset/train/images/0224022137_jpg.rf.6fa43f52421d8d76a9a469ef99fd8eae.jpg",
+      "reason": "crop smaller than 24 pixels"
+    },
+    {
+      "source": "wild_bottles",
+      "member": "Plastic Bottle Image Dataset/train/images/0224022155_jpg.rf.f5b8b9918635a314fafae3efed51905c.jpg",
+      "reason": "crop smaller than 24 pixels"
+    },
+    {
+      "source": "wild_bottles",
+      "member": "Plastic Bottle Image Dataset/train/images/0224022223_jpg.rf.69b074fa3f81193359a03b79fddef7d3.jpg",
+      "reason": "crop smaller than 24 pixels"
+    },
+    {
+      "source": "wild_bottles",
+      "member": "Plastic Bottle Image Dataset/train/images/0224022235_jpg.rf.d27b81a491ebd9dd24cd8bc09846a7b1.jpg",
+      "reason": "crop smaller than 24 pixels"
+    },
+    {
+      "source": "wild_bottles",
+      "member": "Plastic Bottle Image Dataset/train/images/0224022313_jpg.rf.5d011ef424e1e701fa41ac1251737551.jpg",
+      "reason": "crop smaller than 24 pixels"
+    },
+    {
+      "source": "wild_bottles",
+      "member": "Plastic Bottle Image Dataset/train/images/0224022326_jpg.rf.ee746ef606827e69d25113dac6dca054.jpg",
+      "reason": "crop smaller than 24 pixels"
+    },
+    {
+      "source": "wild_bottles",
+      "member": "Plastic Bottle Image Dataset/train/images/0224022338_jpg.rf.d6def37383ac79f5e61e016b1b12612d.jpg",
+      "reason": "crop smaller than 24 pixels"
+    },
+    {
+      "source": "wild_bottles",
+      "member": "Plastic Bottle Image Dataset/train/images/0224022440_jpg.rf.a333b531e7a9cf793edd1c9db1dcc843.jpg",
+      "reason": "crop smaller than 24 pixels"
+    },
+    {
+      "source": "wild_bottles",
+      "member": "Plastic Bottle Image Dataset/train/images/0224022505_jpg.rf.cff6b3a7010ff7981c647203e5eb2749.jpg",
+      "reason": "crop smaller than 24 pixels"
+    },
+    {
+      "source": "wild_bottles",
+      "member": "Plastic Bottle Image Dataset/train/images/0224022535_jpg.rf.c08ae83fe99204f136877501267068c5.jpg",
+      "reason": "crop smaller than 24 pixels"
+    },
+    {
+      "source": "wild_bottles",
+      "member": "Plastic Bottle Image Dataset/train/images/0224022547_jpg.rf.4480a67ff14ce906fe3394012b075181.jpg",
+      "reason": "crop smaller than 24 pixels"
+    },
+    {
+      "source": "wild_bottles",
+      "member": "Plastic Bottle Image Dataset/train/images/0224022751_jpg.rf.13e6458d5e455c7a3e06198a41d08309.jpg",
+      "reason": "crop smaller than 24 pixels"
+    },
+    {
+      "source": "wild_bottles",
+      "member": "Plastic Bottle Image Dataset/train/images/0224022804_jpg.rf.455c1911609cec0406050ab8595691f3.jpg",
+      "reason": "crop smaller than 24 pixels"
+    },
+    {
+      "source": "wild_bottles",
+      "member": "Plastic Bottle Image Dataset/train/images/0224022824_jpg.rf.2152c83a375c310e2518dd38eac64b6c.jpg",
+      "reason": "crop smaller than 24 pixels"
+    },
+    {
+      "source": "wild_bottles",
+      "member": "Plastic Bottle Image Dataset/train/images/0224022837_jpg.rf.80d7824d8f15404cba0b285385221829.jpg",
+      "reason": "crop smaller than 24 pixels"
+    },
+    {
+      "source": "wild_bottles",
+      "member": "Plastic Bottle Image Dataset/train/images/0224022922_jpg.rf.795c14d5983571d01b09fab3b9fbfd42.jpg",
+      "reason": "crop smaller than 24 pixels"
+    },
+    {
+      "source": "wild_bottles",
+      "member": "Plastic Bottle Image Dataset/train/images/0224023006_jpg.rf.905c8dc3d4c2bcf2ed03da695fc8ec71.jpg",
+      "reason": "crop smaller than 24 pixels"
+    },
+    {
+      "source": "wild_bottles",
+      "member": "Plastic Bottle Image Dataset/train/images/100061_jpg.rf.3f96f371f068c2c3f259ecb56a3abde3.jpg",
+      "reason": "crop smaller than 24 pixels"
+    },
+    {
+      "source": "wild_bottles",
+      "member": "Plastic Bottle Image Dataset/train/images/100061_jpg.rf.d94050f409c14ecc7e1427ce4e2aadde.jpg",
+      "reason": "crop smaller than 24 pixels"
+    },
+    {
+      "source": "wild_bottles",
+      "member": "Plastic Bottle Image Dataset/train/images/100158_jpg.rf.bda806704d57fba8c59ae9f22305c1c2.jpg",
+      "reason": "crop smaller than 24 pixels"
+    },
+    {
+      "source": "wild_bottles",
+      "member": "Plastic Bottle Image Dataset/train/images/11_jpg.rf.efac82fa00267cd79239940727efc483.jpg",
+      "reason": "crop smaller than 24 pixels"
+    },
+    {
+      "source": "wild_bottles",
+      "member": "Plastic Bottle Image Dataset/train/images/12_jpg.rf.5dd5a7b966ad86a9225d9a78fb3bf9b7.jpg",
+      "reason": "crop smaller than 24 pixels"
+    },
+    {
+      "source": "wild_bottles",
+      "member": "Plastic Bottle Image Dataset/train/images/15-Things-Garbage-Collectors-Want-You-to-Know_493595614-Maciej-Bledowski-760x506_jpg.rf.9940d8f252518c728bca7054e7450b63.jpg",
+      "reason": "crop smaller than 24 pixels"
+    },
+    {
+      "source": "wild_bottles",
+      "member": "Plastic Bottle Image Dataset/train/images/1_jpg.rf.125edd0f20daf8577a258320b13b9bc2.jpg",
+      "reason": "crop smaller than 24 pixels"
+    },
+    {
+      "source": "wild_bottles",
+      "member": "Plastic Bottle Image Dataset/train/images/200018_jpg.rf.2c9810a1445081d9ce0936af60626bc3.jpg",
+      "reason": "crop smaller than 24 pixels"
+    },
+    {
+      "source": "wild_bottles",
+      "member": "Plastic Bottle Image Dataset/train/images/200075_jpg.rf.9f0ff533fd973e76e66c8b4745cecd36.jpg",
+      "reason": "crop smaller than 24 pixels"
+    },
+    {
+      "source": "wild_bottles",
+      "member": "Plastic Bottle Image Dataset/train/images/200192_jpg.rf.7d5e644056a9420acd12e3ae5e8fcadf.jpg",
+      "reason": "crop smaller than 24 pixels"
+    },
+    {
+      "source": "wild_bottles",
+      "member": "Plastic Bottle Image Dataset/train/images/2_jpg.rf.c286e9d10c6ba3eeeee1cf2d600f5895.jpg",
+      "reason": "crop smaller than 24 pixels"
+    },
+    {
+      "source": "wild_bottles",
+      "member": "Plastic Bottle Image Dataset/train/images/2_jpg.rf.fa1441f5fa9087195639aad13e6bbde5.jpg",
+      "reason": "crop smaller than 24 pixels"
+    },
+    {
+      "source": "wild_bottles",
+      "member": "Plastic Bottle Image Dataset/train/images/32_jpg.rf.d19b83015a60979d7a015c1cc0657dfd.jpg",
+      "reason": "crop smaller than 24 pixels"
+    },
+    {
+      "source": "wild_bottles",
+      "member": "Plastic Bottle Image Dataset/train/images/32_jpg.rf.d19b83015a60979d7a015c1cc0657dfd.jpg",
+      "reason": "crop smaller than 24 pixels"
+    },
+    {
+      "source": "wild_bottles",
+      "member": "Plastic Bottle Image Dataset/train/images/42_jpg.rf.f963529654d0fb5be05d5ad3c62fd32c.jpg",
+      "reason": "crop smaller than 24 pixels"
+    },
+    {
+      "source": "wild_bottles",
+      "member": "Plastic Bottle Image Dataset/train/images/700084_jpg.rf.d74836c3c7dcebce7506ef17e373837c.jpg",
+      "reason": "crop smaller than 24 pixels"
+    },
+    {
+      "source": "wild_bottles",
+      "member": "Plastic Bottle Image Dataset/train/images/700280_jpg.rf.ca499cde16ecddceaaa020f74f087737.jpg",
+      "reason": "crop smaller than 24 pixels"
+    },
+    {
+      "source": "wild_bottles",
+      "member": "Plastic Bottle Image Dataset/train/images/71_jpg.rf.b4eb1c9a0bf568e47a47042ce54f420f.jpg",
+      "reason": "crop smaller than 24 pixels"
+    },
+    {
+      "source": "wild_bottles",
+      "member": "Plastic Bottle Image Dataset/train/images/7_jpg.rf.bb9681b32e9ac720dc8aeb13e09dfe51.jpg",
+      "reason": "crop smaller than 24 pixels"
+    },
+    {
+      "source": "wild_bottles",
+      "member": "Plastic Bottle Image Dataset/train/images/7_jpg.rf.bb9681b32e9ac720dc8aeb13e09dfe51.jpg",
+      "reason": "crop smaller than 24 pixels"
+    },
+    {
+      "source": "wild_bottles",
+      "member": "Plastic Bottle Image Dataset/train/images/800255_jpg.rf.cf3e2b1da617d8fa033e98e127fc38cb.jpg",
+      "reason": "crop smaller than 24 pixels"
+    },
+    {
+      "source": "wild_bottles",
+      "member": "Plastic Bottle Image Dataset/train/images/800255_jpg.rf.cf3e2b1da617d8fa033e98e127fc38cb.jpg",
+      "reason": "crop smaller than 24 pixels"
+    },
+    {
+      "source": "wild_bottles",
+      "member": "Plastic Bottle Image Dataset/train/images/800255_jpg.rf.cf3e2b1da617d8fa033e98e127fc38cb.jpg",
+      "reason": "crop smaller than 24 pixels"
+    },
+    {
+      "source": "wild_bottles",
+      "member": "Plastic Bottle Image Dataset/train/images/800255_jpg.rf.cf3e2b1da617d8fa033e98e127fc38cb.jpg",
+      "reason": "crop smaller than 24 pixels"
+    },
+    {
+      "source": "wild_bottles",
+      "member": "Plastic Bottle Image Dataset/train/images/800330_jpg.rf.36d5ebbb2bd24a66f5c43378b18e8e7d.jpg",
+      "reason": "crop smaller than 24 pixels"
+    },
+    {
+      "source": "wild_bottles",
+      "member": "Plastic Bottle Image Dataset/train/images/800361_jpg.rf.3d909fca2924be5e6e5c63682811fba6.jpg",
+      "reason": "crop smaller than 24 pixels"
+    },
+    {
+      "source": "wild_bottles",
+      "member": "Plastic Bottle Image Dataset/train/images/800364_jpg.rf.b20e88a953f279e9d02c99a60cef5818.jpg",
+      "reason": "crop smaller than 24 pixels"
+    },
+    {
+      "source": "wild_bottles",
+      "member": "Plastic Bottle Image Dataset/train/images/800456_jpg.rf.9102aea35019a0f43aee9343327da455.jpg",
+      "reason": "crop smaller than 24 pixels"
+    },
+    {
+      "source": "wild_bottles",
+      "member": "Plastic Bottle Image Dataset/train/images/800475_jpg.rf.b0650f07356005ffb5efda8a393a2153.jpg",
+      "reason": "crop smaller than 24 pixels"
+    },
+    {
+      "source": "wild_bottles",
+      "member": "Plastic Bottle Image Dataset/train/images/900044_jpg.rf.0d221679899835d0919f319a4bb24717.jpg",
+      "reason": "crop smaller than 24 pixels"
+    },
+    {
+      "source": "wild_bottles",
+      "member": "Plastic Bottle Image Dataset/train/images/900049_jpg.rf.1304458faf64353d98f55341da892adb.jpg",
+      "reason": "crop smaller than 24 pixels"
+    },
+    {
+      "source": "wild_bottles",
+      "member": "Plastic Bottle Image Dataset/train/images/900160_jpg.rf.b5624435b53714d2e21d06d049fd26d9.jpg",
+      "reason": "crop smaller than 24 pixels"
+    },
+    {
+      "source": "wild_bottles",
+      "member": "Plastic Bottle Image Dataset/train/images/900206_jpg.rf.8b2d9ec59850cbe4408e98be7a32d455.jpg",
+      "reason": "crop smaller than 24 pixels"
+    },
+    {
+      "source": "wild_bottles",
+      "member": "Plastic Bottle Image Dataset/train/images/900235_jpg.rf.885faa576199b18e5c530e4b9a1b365c.jpg",
+      "reason": "crop smaller than 24 pixels"
+    },
+    {
+      "source": "wild_bottles",
+      "member": "Plastic Bottle Image Dataset/train/images/91_jpg.rf.1377217abe67bceffdb4141a34c9e428.jpg",
+      "reason": "crop smaller than 24 pixels"
+    },
+    {
+      "source": "wild_bottles",
+      "member": "Plastic Bottle Image Dataset/train/images/98_jpg.rf.e9674b805c0c99b7764dccd8bb6339bd.jpg",
+      "reason": "crop smaller than 24 pixels"
+    },
+    {
+      "source": "wild_bottles",
+      "member": "Plastic Bottle Image Dataset/train/images/Datacluster-Trash-35-_jpg.rf.42ba9f7b9f27baf48a306f503e10170d.jpg",
+      "reason": "crop smaller than 24 pixels"
+    },
+    {
+      "source": "wild_bottles",
+      "member": "Plastic Bottle Image Dataset/train/images/R_112_jpg.rf.c4d0de399a0b24e8dbb5cf4abc734d0d.jpg",
+      "reason": "crop smaller than 24 pixels"
+    },
+    {
+      "source": "wild_bottles",
+      "member": "Plastic Bottle Image Dataset/train/images/R_112_jpg.rf.c4d0de399a0b24e8dbb5cf4abc734d0d.jpg",
+      "reason": "crop smaller than 24 pixels"
+    },
+    {
+      "source": "wild_bottles",
+      "member": "Plastic Bottle Image Dataset/train/images/R_112_jpg.rf.c4d0de399a0b24e8dbb5cf4abc734d0d.jpg",
+      "reason": "crop smaller than 24 pixels"
+    },
+    {
+      "source": "wild_bottles",
+      "member": "Plastic Bottle Image Dataset/train/images/R_112_jpg.rf.c4d0de399a0b24e8dbb5cf4abc734d0d.jpg",
+      "reason": "crop smaller than 24 pixels"
+    },
+    {
+      "source": "wild_bottles",
+      "member": "Plastic Bottle Image Dataset/train/images/R_112_jpg.rf.c4d0de399a0b24e8dbb5cf4abc734d0d.jpg",
+      "reason": "crop smaller than 24 pixels"
+    },
+    {
+      "source": "wild_bottles",
+      "member": "Plastic Bottle Image Dataset/train/images/R_112_jpg.rf.c4d0de399a0b24e8dbb5cf4abc734d0d.jpg",
+      "reason": "crop smaller than 24 pixels"
+    },
+    {
+      "source": "wild_bottles",
+      "member": "Plastic Bottle Image Dataset/train/images/R_112_jpg.rf.c4d0de399a0b24e8dbb5cf4abc734d0d.jpg",
+      "reason": "crop smaller than 24 pixels"
+    },
+    {
+      "source": "wild_bottles",
+      "member": "Plastic Bottle Image Dataset/train/images/R_112_jpg.rf.c4d0de399a0b24e8dbb5cf4abc734d0d.jpg",
+      "reason": "crop smaller than 24 pixels"
+    },
+    {
+      "source": "wild_bottles",
+      "member": "Plastic Bottle Image Dataset/train/images/R_112_jpg.rf.c4d0de399a0b24e8dbb5cf4abc734d0d.jpg",
+      "reason": "crop smaller than 24 pixels"
+    },
+    {
+      "source": "wild_bottles",
+      "member": "Plastic Bottle Image Dataset/train/images/R_112_jpg.rf.c4d0de399a0b24e8dbb5cf4abc734d0d.jpg",
+      "reason": "crop smaller than 24 pixels"
+    },
+    {
+      "source": "wild_bottles",
+      "member": "Plastic Bottle Image Dataset/train/images/R_112_jpg.rf.c4d0de399a0b24e8dbb5cf4abc734d0d.jpg",
+      "reason": "crop smaller than 24 pixels"
+    },
+    {
+      "source": "wild_bottles",
+      "member": "Plastic Bottle Image Dataset/train/images/R_112_jpg.rf.c4d0de399a0b24e8dbb5cf4abc734d0d.jpg",
+      "reason": "crop smaller than 24 pixels"
+    },
+    {
+      "source": "wild_bottles",
+      "member": "Plastic Bottle Image Dataset/train/images/R_112_jpg.rf.c4d0de399a0b24e8dbb5cf4abc734d0d.jpg",
+      "reason": "crop smaller than 24 pixels"
+    },
+    {
+      "source": "wild_bottles",
+      "member": "Plastic Bottle Image Dataset/train/images/R_112_jpg.rf.c4d0de399a0b24e8dbb5cf4abc734d0d.jpg",
+      "reason": "crop smaller than 24 pixels"
+    },
+    {
+      "source": "wild_bottles",
+      "member": "Plastic Bottle Image Dataset/train/images/R_112_jpg.rf.c4d0de399a0b24e8dbb5cf4abc734d0d.jpg",
+      "reason": "crop smaller than 24 pixels"
+    },
+    {
+      "source": "wild_bottles",
+      "member": "Plastic Bottle Image Dataset/train/images/R_112_jpg.rf.c4d0de399a0b24e8dbb5cf4abc734d0d.jpg",
+      "reason": "crop smaller than 24 pixels"
+    },
+    {
+      "source": "wild_bottles",
+      "member": "Plastic Bottle Image Dataset/train/images/R_112_jpg.rf.c4d0de399a0b24e8dbb5cf4abc734d0d.jpg",
+      "reason": "crop smaller than 24 pixels"
+    },
+    {
+      "source": "wild_bottles",
+      "member": "Plastic Bottle Image Dataset/train/images/R_112_jpg.rf.c4d0de399a0b24e8dbb5cf4abc734d0d.jpg",
+      "reason": "crop smaller than 24 pixels"
+    },
+    {
+      "source": "wild_bottles",
+      "member": "Plastic Bottle Image Dataset/train/images/R_112_jpg.rf.c4d0de399a0b24e8dbb5cf4abc734d0d.jpg",
+      "reason": "crop smaller than 24 pixels"
+    },
+    {
+      "source": "wild_bottles",
+      "member": "Plastic Bottle Image Dataset/train/images/R_112_jpg.rf.c4d0de399a0b24e8dbb5cf4abc734d0d.jpg",
+      "reason": "crop smaller than 24 pixels"
+    },
+    {
+      "source": "wild_bottles",
+      "member": "Plastic Bottle Image Dataset/train/images/R_78_jpg.rf.caa02c7a0ddb74cf769d1caa91e28b9b.jpg",
+      "reason": "crop smaller than 24 pixels"
+    },
+    {
+      "source": "wild_bottles",
+      "member": "Plastic Bottle Image Dataset/train/images/assorted-garbage-bottles-on-sandy-surface_jpg.rf.043a22e0bfe5a9d499eaf6ba71ecaf66.jpg",
+      "reason": "crop smaller than 24 pixels"
+    },
+    {
+      "source": "wild_bottles",
+      "member": "Plastic Bottle Image Dataset/train/images/bandicam-2019-11-03-20-21-29-429_jpg.rf.63c55612731966f17900dd5f186ed80e.jpg",
+      "reason": "crop smaller than 24 pixels"
+    },
+    {
+      "source": "wild_bottles",
+      "member": "Plastic Bottle Image Dataset/train/images/bandicam-2019-11-03-20-30-57-806_jpg.rf.7d9d67381db900aa891a2f77523f9acc.jpg",
+      "reason": "crop smaller than 24 pixels"
+    },
+    {
+      "source": "wild_bottles",
+      "member": "Plastic Bottle Image Dataset/train/images/bandicam-2019-11-05-23-55-15-339_jpg.rf.8963c7dbd0ac44da8fa58869563c0488.jpg",
+      "reason": "crop smaller than 24 pixels"
+    },
+    {
+      "source": "wild_bottles",
+      "member": "Plastic Bottle Image Dataset/train/images/bandicam-2019-11-05-23-55-39-755_jpg.rf.f3978ae335d48854068d61863738a375.jpg",
+      "reason": "crop smaller than 24 pixels"
+    },
+    {
+      "source": "wild_bottles",
+      "member": "Plastic Bottle Image Dataset/train/images/bottle-of-drinking-water-splashing-out-isolated-on-white-E698DR_jpg.rf.ba4847543f88ebf35f5955c93006b11f.jpg",
+      "reason": "crop smaller than 24 pixels"
+    },
+    {
+      "source": "wild_bottles",
+      "member": "Plastic Bottle Image Dataset/train/images/discarded-plastic-bottles-and-other-non-degradable-rubbish-in-field-C5GRT5_jpg.rf.c2d34db09db9b2d665d9e11f75e9de81.jpg",
+      "reason": "crop smaller than 24 pixels"
+    },
+    {
+      "source": "wild_bottles",
+      "member": "Plastic Bottle Image Dataset/train/images/discarded-plastic-bottles-and-other-non-degradable-rubbish-in-field-C5GRT5_jpg.rf.c2d34db09db9b2d665d9e11f75e9de81.jpg",
+      "reason": "crop smaller than 24 pixels"
+    },
+    {
+      "source": "wild_bottles",
+      "member": "Plastic Bottle Image Dataset/train/images/discarded-plastic-bottles-and-other-non-degradable-rubbish-in-field-C5GRT5_jpg.rf.c2d34db09db9b2d665d9e11f75e9de81.jpg",
+      "reason": "crop smaller than 24 pixels"
+    },
+    {
+      "source": "wild_bottles",
+      "member": "Plastic Bottle Image Dataset/train/images/discarded-plastic-bottles-and-other-non-degradable-rubbish-in-field-C5GRT5_jpg.rf.c2d34db09db9b2d665d9e11f75e9de81.jpg",
+      "reason": "crop smaller than 24 pixels"
+    },
+    {
+      "source": "wild_bottles",
+      "member": "Plastic Bottle Image Dataset/train/images/garbage-green-grass-field-garbage-grass-paper-ball-plastic-bottles-bag-ground-park-183646624_jpg.rf.f0f0a765178c0df7e92f156f4abd4de7.jpg",
+      "reason": "crop smaller than 24 pixels"
+    },
+    {
+      "source": "wild_bottles",
+      "member": "Plastic Bottle Image Dataset/train/images/greg2_png.rf.c45302dde92cd023ae11c13c7a042e24.jpg",
+      "reason": "crop smaller than 24 pixels"
+    },
+    {
+      "source": "wild_bottles",
+      "member": "Plastic Bottle Image Dataset/train/images/images_jpg.rf.a6d749b206fff0fd8b287340464e68bb.jpg",
+      "reason": "crop smaller than 24 pixels"
+    },
+    {
+      "source": "wild_bottles",
+      "member": "Plastic Bottle Image Dataset/train/images/istockphoto-466138462-612x612_jpg.rf.e75a76e8f175ea4e930ab68007f2e13f.jpg",
+      "reason": "crop smaller than 24 pixels"
+    },
+    {
+      "source": "wild_bottles",
+      "member": "Plastic Bottle Image Dataset/train/images/istockphoto-466138462-612x612_jpg.rf.e75a76e8f175ea4e930ab68007f2e13f.jpg",
+      "reason": "crop smaller than 24 pixels"
+    },
+    {
+      "source": "wild_bottles",
+      "member": "Plastic Bottle Image Dataset/train/images/plastic-409-_JPG.rf.a749e1433c1304f0aa47c811794f3320.jpg",
+      "reason": "crop smaller than 24 pixels"
+    },
+    {
+      "source": "wild_bottles",
+      "member": "Plastic Bottle Image Dataset/train/images/plastic-416-_JPG.rf.78127b26bd2faadd6ce6cc31b0e92f3c.jpg",
+      "reason": "crop smaller than 24 pixels"
+    },
+    {
+      "source": "wild_bottles",
+      "member": "Plastic Bottle Image Dataset/train/images/plastic-448-_JPG.rf.8f131a05dfa946bdc62f6df4a81aa8b2.jpg",
+      "reason": "crop smaller than 24 pixels"
+    },
+    {
+      "source": "wild_bottles",
+      "member": "Plastic Bottle Image Dataset/train/images/plastic-500-_JPG.rf.65f4eac84fabe747bc5d015a12d23e13.jpg",
+      "reason": "crop smaller than 24 pixels"
+    },
+    {
+      "source": "wild_bottles",
+      "member": "Plastic Bottle Image Dataset/train/images/plastic-513-_JPG.rf.89bee0018fd9eaa3cdec37a16d65d954.jpg",
+      "reason": "crop smaller than 24 pixels"
+    },
+    {
+      "source": "wild_bottles",
+      "member": "Plastic Bottle Image Dataset/train/images/plastic-582-_JPG.rf.a60cb422599e80275a275371b80843d6.jpg",
+      "reason": "crop smaller than 24 pixels"
+    },
+    {
+      "source": "wild_bottles",
+      "member": "Plastic Bottle Image Dataset/train/images/plastic-618-_JPG.rf.2e539d45ce7fbb99f0b163eb9cdb5a83.jpg",
+      "reason": "crop smaller than 24 pixels"
+    },
+    {
+      "source": "wild_bottles",
+      "member": "Plastic Bottle Image Dataset/train/images/plastic-653-_JPG.rf.2662de6e4c7f3d9b1d4053327e0e57d6.jpg",
+      "reason": "crop smaller than 24 pixels"
+    },
+    {
+      "source": "wild_bottles",
+      "member": "Plastic Bottle Image Dataset/train/images/plastic-787-_JPG.rf.29da34528325013469400cc6957c0bd6.jpg",
+      "reason": "crop smaller than 24 pixels"
+    },
+    {
+      "source": "wild_bottles",
+      "member": "Plastic Bottle Image Dataset/train/images/plastic-818-_JPG.rf.6ff228df15e14bd5c00702cf1ac5c520.jpg",
+      "reason": "crop smaller than 24 pixels"
+    },
+    {
+      "source": "wild_bottles",
+      "member": "Plastic Bottle Image Dataset/train/images/plastic-859-_JPG.rf.c40c1ede625e630bb5c3e50770cf126c.jpg",
+      "reason": "crop smaller than 24 pixels"
+    },
+    {
+      "source": "wild_bottles",
+      "member": "Plastic Bottle Image Dataset/train/images/plastic-pollution-f5728798cbdb4fd0a8e223002d168a9f_jpg.rf.860b917481468a940385b4b37b9bcaeb.jpg",
+      "reason": "crop smaller than 24 pixels"
+    },
+    {
+      "source": "wild_bottles",
+      "member": "Plastic Bottle Image Dataset/train/images/plastic-pollution-f5728798cbdb4fd0a8e223002d168a9f_jpg.rf.860b917481468a940385b4b37b9bcaeb.jpg",
+      "reason": "crop smaller than 24 pixels"
+    },
+    {
+      "source": "wild_bottles",
+      "member": "Plastic Bottle Image Dataset/train/images/plastic-pollution-f5728798cbdb4fd0a8e223002d168a9f_jpg.rf.860b917481468a940385b4b37b9bcaeb.jpg",
+      "reason": "crop smaller than 24 pixels"
+    },
+    {
+      "source": "wild_bottles",
+      "member": "Plastic Bottle Image Dataset/train/images/plastic-pollution-f5728798cbdb4fd0a8e223002d168a9f_jpg.rf.860b917481468a940385b4b37b9bcaeb.jpg",
+      "reason": "crop smaller than 24 pixels"
+    },
+    {
+      "source": "wild_bottles",
+      "member": "Plastic Bottle Image Dataset/train/images/plastic103_jpg.rf.1410c4111d122f114d389e9b718b8043.jpg",
+      "reason": "crop smaller than 24 pixels"
+    },
+    {
+      "source": "wild_bottles",
+      "member": "Plastic Bottle Image Dataset/train/images/plastic110_jpg.rf.0bd0ff438a65f4b96fd203e71a0fb42f.jpg",
+      "reason": "crop smaller than 24 pixels"
+    },
+    {
+      "source": "wild_bottles",
+      "member": "Plastic Bottle Image Dataset/train/images/plastic117_jpg.rf.07a0c066e116402616cbecb5d26c0f84.jpg",
+      "reason": "crop smaller than 24 pixels"
+    },
+    {
+      "source": "wild_bottles",
+      "member": "Plastic Bottle Image Dataset/train/images/plastic158_jpg.rf.f4d4a84dfc45315c44fb6854a4ecc3f6.jpg",
+      "reason": "crop smaller than 24 pixels"
+    },
+    {
+      "source": "wild_bottles",
+      "member": "Plastic Bottle Image Dataset/train/images/plastic192_jpg.rf.4ecc0ba825a2bafda8c39ec3c7b43f6e.jpg",
+      "reason": "crop smaller than 24 pixels"
+    },
+    {
+      "source": "wild_bottles",
+      "member": "Plastic Bottle Image Dataset/train/images/plastic205_jpg.rf.c16a5866619bdd6e1fcd157cfada1928.jpg",
+      "reason": "crop smaller than 24 pixels"
+    },
+    {
+      "source": "wild_bottles",
+      "member": "Plastic Bottle Image Dataset/train/images/plastic206_jpg.rf.6c41adbb25522c49fc7856a82036b928.jpg",
+      "reason": "crop smaller than 24 pixels"
+    },
+    {
+      "source": "wild_bottles",
+      "member": "Plastic Bottle Image Dataset/train/images/plastic211_jpg.rf.1fb5d6dbac50a30a5e61b60f9fa87fe4.jpg",
+      "reason": "crop smaller than 24 pixels"
+    },
+    {
+      "source": "wild_bottles",
+      "member": "Plastic Bottle Image Dataset/train/images/plastic226_jpg.rf.30927e2dcf3c9f4486c2822691f8f95a.jpg",
+      "reason": "crop smaller than 24 pixels"
+    },
+    {
+      "source": "wild_bottles",
+      "member": "Plastic Bottle Image Dataset/train/images/plastic228_jpg.rf.0ea1c5d9d1c24f673b12be01e3e699e9.jpg",
+      "reason": "crop smaller than 24 pixels"
+    },
+    {
+      "source": "wild_bottles",
+      "member": "Plastic Bottle Image Dataset/train/images/plastic230_jpg.rf.2a5e5b3d9e12ccdb6c4743229ac1d61d.jpg",
+      "reason": "crop smaller than 24 pixels"
+    },
+    {
+      "source": "wild_bottles",
+      "member": "Plastic Bottle Image Dataset/train/images/plastic234_jpg.rf.46cd4c97733e370339404d2203d409f1.jpg",
+      "reason": "crop smaller than 24 pixels"
+    },
+    {
+      "source": "wild_bottles",
+      "member": "Plastic Bottle Image Dataset/train/images/plastic245_jpg.rf.ae1453dd9debc2d6c348fb12097fe788.jpg",
+      "reason": "crop smaller than 24 pixels"
+    },
+    {
+      "source": "wild_bottles",
+      "member": "Plastic Bottle Image Dataset/train/images/plastic250_jpg.rf.a96f8ad184e5ba1615f47a65cda8fb7e.jpg",
+      "reason": "crop smaller than 24 pixels"
+    },
+    {
+      "source": "wild_bottles",
+      "member": "Plastic Bottle Image Dataset/train/images/plastic271_jpg.rf.d8eb55edd821478a931011e780ae3f3e.jpg",
+      "reason": "crop smaller than 24 pixels"
+    },
+    {
+      "source": "wild_bottles",
+      "member": "Plastic Bottle Image Dataset/train/images/plastic278_jpg.rf.e317412006d4557ca25775128b1ad6f4.jpg",
+      "reason": "crop smaller than 24 pixels"
+    },
+    {
+      "source": "wild_bottles",
+      "member": "Plastic Bottle Image Dataset/train/images/plastic27_jpg.rf.c7146f4ac17dfd560455adf82fef2b83.jpg",
+      "reason": "crop smaller than 24 pixels"
+    },
+    {
+      "source": "wild_bottles",
+      "member": "Plastic Bottle Image Dataset/train/images/plastic285_jpg.rf.111c92d67c34d59126c2cef560672adc.jpg",
+      "reason": "crop smaller than 24 pixels"
+    },
+    {
+      "source": "wild_bottles",
+      "member": "Plastic Bottle Image Dataset/train/images/plastic30_jpg.rf.5f709a6888657bb6bddfa9e438d5af31.jpg",
+      "reason": "crop smaller than 24 pixels"
+    },
+    {
+      "source": "wild_bottles",
+      "member": "Plastic Bottle Image Dataset/train/images/plastic319_jpg.rf.5afdfd7e6c1822444dba8eb4ee88776c.jpg",
+      "reason": "crop smaller than 24 pixels"
+    },
+    {
+      "source": "wild_bottles",
+      "member": "Plastic Bottle Image Dataset/train/images/plastic322_jpg.rf.292f527357dcfe0811fc4b97faca9c7c.jpg",
+      "reason": "crop smaller than 24 pixels"
+    },
+    {
+      "source": "wild_bottles",
+      "member": "Plastic Bottle Image Dataset/train/images/plastic326_jpg.rf.f7a30a754c58b66f9f1310e5efb15b8e.jpg",
+      "reason": "crop smaller than 24 pixels"
+    },
+    {
+      "source": "wild_bottles",
+      "member": "Plastic Bottle Image Dataset/train/images/plastic335_jpg.rf.670991473435810be1c416c03bd9c9d1.jpg",
+      "reason": "crop smaller than 24 pixels"
+    },
+    {
+      "source": "wild_bottles",
+      "member": "Plastic Bottle Image Dataset/train/images/plastic341_jpg.rf.ccdab0bf1a5f06ba9aea4602b99115c2.jpg",
+      "reason": "crop smaller than 24 pixels"
+    },
+    {
+      "source": "wild_bottles",
+      "member": "Plastic Bottle Image Dataset/train/images/plastic34_jpg.rf.29c0129c061bbd45f377beb69c00a350.jpg",
+      "reason": "crop smaller than 24 pixels"
+    },
+    {
+      "source": "wild_bottles",
+      "member": "Plastic Bottle Image Dataset/train/images/plastic365_jpg.rf.3f6d15b474a7872966b25f405f6a85cd.jpg",
+      "reason": "crop smaller than 24 pixels"
+    },
+    {
+      "source": "wild_bottles",
+      "member": "Plastic Bottle Image Dataset/train/images/plastic37_jpg.rf.f0d32b921be6abfd4cf375c065a2005f.jpg",
+      "reason": "crop smaller than 24 pixels"
+    },
+    {
+      "source": "wild_bottles",
+      "member": "Plastic Bottle Image Dataset/train/images/plastic390_jpg.rf.4126ff0ce49fa56b8a2a8ab791909849.jpg",
+      "reason": "crop smaller than 24 pixels"
+    },
+    {
+      "source": "wild_bottles",
+      "member": "Plastic Bottle Image Dataset/train/images/plastic39_jpg.rf.4b545f55d5add9f2c6d7544da8e8dcaf.jpg",
+      "reason": "crop smaller than 24 pixels"
+    },
+    {
+      "source": "wild_bottles",
+      "member": "Plastic Bottle Image Dataset/train/images/plastic42_jpg.rf.2bec0b55b31d3d91e285ea3f30af9108.jpg",
+      "reason": "crop smaller than 24 pixels"
+    },
+    {
+      "source": "wild_bottles",
+      "member": "Plastic Bottle Image Dataset/train/images/plastic46_jpg.rf.40cf5ea7aeadf9d98296ea61e8539367.jpg",
+      "reason": "crop smaller than 24 pixels"
+    },
+    {
+      "source": "wild_bottles",
+      "member": "Plastic Bottle Image Dataset/train/images/plastic50_jpg.rf.92ebb9703b295bb35be530a4c87ba091.jpg",
+      "reason": "crop smaller than 24 pixels"
+    },
+    {
+      "source": "wild_bottles",
+      "member": "Plastic Bottle Image Dataset/train/images/plastic56_jpg.rf.e32b784d10f83e16297e722c363b81bf.jpg",
+      "reason": "crop smaller than 24 pixels"
+    },
+    {
+      "source": "wild_bottles",
+      "member": "Plastic Bottle Image Dataset/train/images/plastic58_jpg.rf.b953322eb155e99048badef7a2deb227.jpg",
+      "reason": "crop smaller than 24 pixels"
+    },
+    {
+      "source": "wild_bottles",
+      "member": "Plastic Bottle Image Dataset/train/images/plastic66_jpg.rf.ee173cd6565362534e5206f57c45b798.jpg",
+      "reason": "crop smaller than 24 pixels"
+    },
+    {
+      "source": "wild_bottles",
+      "member": "Plastic Bottle Image Dataset/train/images/plastic71_jpg.rf.6d0a76653cb81293678751b20198a56e.jpg",
+      "reason": "crop smaller than 24 pixels"
+    },
+    {
+      "source": "wild_bottles",
+      "member": "Plastic Bottle Image Dataset/train/images/plastic_bottle-209_jpg.rf.673e3db3fb0bf0f39abc6af26278172b.jpg",
+      "reason": "crop smaller than 24 pixels"
+    },
+    {
+      "source": "wild_bottles",
+      "member": "Plastic Bottle Image Dataset/train/images/product-jpeg-500x500_jpg.rf.8a2f070a7a687108e186c3d8f7f4fe7f.jpg",
+      "reason": "crop smaller than 24 pixels"
+    },
+    {
+      "source": "wild_bottles",
+      "member": "Plastic Bottle Image Dataset/train/images/rioni-river-plastic-22-april_1-scaled-6edc42c0_jpeg.rf.c4fdbcd8de09a17433a1cdc01f4c372f.jpg",
+      "reason": "crop smaller than 24 pixels"
+    },
+    {
+      "source": "wild_bottles",
+      "member": "Plastic Bottle Image Dataset/train/images/rioni-river-plastic-22-april_1-scaled-6edc42c0_jpeg.rf.c4fdbcd8de09a17433a1cdc01f4c372f.jpg",
+      "reason": "crop smaller than 24 pixels"
+    },
+    {
+      "source": "wild_bottles",
+      "member": "Plastic Bottle Image Dataset/train/images/view-of-garbage-mostly-plastic-bottles-on-a-waterway-in-the-industrial-GHG765_jpg.rf.0a8aa46df0267d960bb0376ae0981755.jpg",
+      "reason": "crop smaller than 24 pixels"
+    },
+    {
+      "source": "wild_bottles",
+      "member": "Plastic Bottle Image Dataset/train/images/z1014_104_11zon_jpg.rf.80ef485026977507c0f54e392e79b1db.jpg",
+      "reason": "crop smaller than 24 pixels"
+    },
+    {
+      "source": "wild_bottles",
+      "member": "Plastic Bottle Image Dataset/train/images/z1015_105_11zon_jpg.rf.d1d82124deb4454d3e08966f7734c253.jpg",
+      "reason": "crop smaller than 24 pixels"
+    },
+    {
+      "source": "wild_bottles",
+      "member": "Plastic Bottle Image Dataset/valid/images/-161_jpg.rf.d67d90d5ef803e8d1c0529db06e2a5e4.jpg",
+      "reason": "crop smaller than 24 pixels"
+    },
+    {
+      "source": "wild_bottles",
+      "member": "Plastic Bottle Image Dataset/valid/images/-161_jpg.rf.d67d90d5ef803e8d1c0529db06e2a5e4.jpg",
+      "reason": "crop smaller than 24 pixels"
+    },
+    {
+      "source": "wild_bottles",
+      "member": "Plastic Bottle Image Dataset/valid/images/-430_jpg.rf.260336d509e54bea9923698a7a812d6f.jpg",
+      "reason": "crop smaller than 24 pixels"
+    },
+    {
+      "source": "wild_bottles",
+      "member": "Plastic Bottle Image Dataset/valid/images/-430_jpg.rf.260336d509e54bea9923698a7a812d6f.jpg",
+      "reason": "crop smaller than 24 pixels"
+    },
+    {
+      "source": "wild_bottles",
+      "member": "Plastic Bottle Image Dataset/valid/images/-92_jpg.rf.e6de972097f7127620f9dcdf2bbab97e.jpg",
+      "reason": "crop smaller than 24 pixels"
+    },
+    {
+      "source": "wild_bottles",
+      "member": "Plastic Bottle Image Dataset/valid/images/-92_jpg.rf.e6de972097f7127620f9dcdf2bbab97e.jpg",
+      "reason": "crop smaller than 24 pixels"
+    },
+    {
+      "source": "wild_bottles",
+      "member": "Plastic Bottle Image Dataset/valid/images/-92_jpg.rf.e6de972097f7127620f9dcdf2bbab97e.jpg",
+      "reason": "crop smaller than 24 pixels"
+    },
+    {
+      "source": "wild_bottles",
+      "member": "Plastic Bottle Image Dataset/valid/images/-92_jpg.rf.e6de972097f7127620f9dcdf2bbab97e.jpg",
+      "reason": "crop smaller than 24 pixels"
+    },
+    {
+      "source": "wild_bottles",
+      "member": "Plastic Bottle Image Dataset/valid/images/-92_jpg.rf.e6de972097f7127620f9dcdf2bbab97e.jpg",
+      "reason": "crop smaller than 24 pixels"
+    },
+    {
+      "source": "wild_bottles",
+      "member": "Plastic Bottle Image Dataset/valid/images/000115_jpg.rf.58020674c52a4c2ce6b1a6c4071666e6.jpg",
+      "reason": "crop smaller than 24 pixels"
+    },
+    {
+      "source": "wild_bottles",
+      "member": "Plastic Bottle Image Dataset/valid/images/000124_jpg.rf.980cfc4cfc1f33f761f9cec5dc05629f.jpg",
+      "reason": "crop smaller than 24 pixels"
+    },
+    {
+      "source": "wild_bottles",
+      "member": "Plastic Bottle Image Dataset/valid/images/0218091302_jpg.rf.59cfa0331a969fda9f20cc9f3ed8d214.jpg",
+      "reason": "crop smaller than 24 pixels"
+    },
+    {
+      "source": "wild_bottles",
+      "member": "Plastic Bottle Image Dataset/valid/images/0218091449_jpg.rf.f6e94f280be7217543120daae3fbe91c.jpg",
+      "reason": "crop smaller than 24 pixels"
+    },
+    {
+      "source": "wild_bottles",
+      "member": "Plastic Bottle Image Dataset/valid/images/0218091952_jpg.rf.868951e0ca10e2bcea3172717485d252.jpg",
+      "reason": "crop smaller than 24 pixels"
+    },
+    {
+      "source": "wild_bottles",
+      "member": "Plastic Bottle Image Dataset/valid/images/0218092022_jpg.rf.f7b3cff2a6ed0effd0a0a29119198b28.jpg",
+      "reason": "crop smaller than 24 pixels"
+    },
+    {
+      "source": "wild_bottles",
+      "member": "Plastic Bottle Image Dataset/valid/images/0218092229_jpg.rf.71abac16b146b39bbda0286f134b25de.jpg",
+      "reason": "crop smaller than 24 pixels"
+    },
+    {
+      "source": "wild_bottles",
+      "member": "Plastic Bottle Image Dataset/valid/images/0218092453_jpg.rf.d53e3eb313a42869c48559f1280e2142.jpg",
+      "reason": "crop smaller than 24 pixels"
+    },
+    {
+      "source": "wild_bottles",
+      "member": "Plastic Bottle Image Dataset/valid/images/0218100854_jpg.rf.d9f368661d38654c490b23aee2a8d48a.jpg",
+      "reason": "crop smaller than 24 pixels"
+    },
+    {
+      "source": "wild_bottles",
+      "member": "Plastic Bottle Image Dataset/valid/images/0218101013_jpg.rf.5b352dc9a53c48fd7c057d8fe0623567.jpg",
+      "reason": "crop smaller than 24 pixels"
+    },
+    {
+      "source": "wild_bottles",
+      "member": "Plastic Bottle Image Dataset/valid/images/0224022018_jpg.rf.a51f0a8e589ddbe3960799891c09ed56.jpg",
+      "reason": "crop smaller than 24 pixels"
+    },
+    {
+      "source": "wild_bottles",
+      "member": "Plastic Bottle Image Dataset/valid/images/0224022417_jpg.rf.8781ab006b6b5290bd4957b092c546d8.jpg",
+      "reason": "crop smaller than 24 pixels"
+    },
+    {
+      "source": "wild_bottles",
+      "member": "Plastic Bottle Image Dataset/valid/images/0224023018_jpg.rf.4551b4ac6885c1ecd30c45285cda8299.jpg",
+      "reason": "crop smaller than 24 pixels"
+    },
+    {
+      "source": "wild_bottles",
+      "member": "Plastic Bottle Image Dataset/valid/images/100006_jpg.rf.20928b278a398fc5cb979871b7f0c1cb.jpg",
+      "reason": "crop smaller than 24 pixels"
+    },
+    {
+      "source": "wild_bottles",
+      "member": "Plastic Bottle Image Dataset/valid/images/100021_jpg.rf.c06927871d8a2386c1e4e78065d1ad5d.jpg",
+      "reason": "crop smaller than 24 pixels"
+    },
+    {
+      "source": "wild_bottles",
+      "member": "Plastic Bottle Image Dataset/valid/images/100023_jpg.rf.ae2e247f606c012de9f358820619b6cd.jpg",
+      "reason": "crop smaller than 24 pixels"
+    },
+    {
+      "source": "wild_bottles",
+      "member": "Plastic Bottle Image Dataset/valid/images/5164254785175552_jpg.rf.09e05c916ab09437f1a487c3fa590bc5.jpg",
+      "reason": "crop smaller than 24 pixels"
+    },
+    {
+      "source": "wild_bottles",
+      "member": "Plastic Bottle Image Dataset/valid/images/65_jpg.rf.f7a7eb5163339ef21d12563223c20c88.jpg",
+      "reason": "crop smaller than 24 pixels"
+    },
+    {
+      "source": "wild_bottles",
+      "member": "Plastic Bottle Image Dataset/valid/images/800387_jpg.rf.5a0c812a4cb459b6a32af11d4a920f36.jpg",
+      "reason": "crop smaller than 24 pixels"
+    },
+    {
+      "source": "wild_bottles",
+      "member": "Plastic Bottle Image Dataset/valid/images/88_jpg.rf.5fdae2f261f038885949ace6e7e75516.jpg",
+      "reason": "crop smaller than 24 pixels"
+    },
+    {
+      "source": "wild_bottles",
+      "member": "Plastic Bottle Image Dataset/valid/images/88_jpg.rf.5fdae2f261f038885949ace6e7e75516.jpg",
+      "reason": "crop smaller than 24 pixels"
+    },
+    {
+      "source": "wild_bottles",
+      "member": "Plastic Bottle Image Dataset/valid/images/88_jpg.rf.5fdae2f261f038885949ace6e7e75516.jpg",
+      "reason": "crop smaller than 24 pixels"
+    },
+    {
+      "source": "wild_bottles",
+      "member": "Plastic Bottle Image Dataset/valid/images/88_jpg.rf.5fdae2f261f038885949ace6e7e75516.jpg",
+      "reason": "crop smaller than 24 pixels"
+    },
+    {
+      "source": "wild_bottles",
+      "member": "Plastic Bottle Image Dataset/valid/images/9_jpg.rf.b090ed0210c660fe165cc8a0434c2c17.jpg",
+      "reason": "crop smaller than 24 pixels"
+    },
+    {
+      "source": "wild_bottles",
+      "member": "Plastic Bottle Image Dataset/valid/images/Ekran-Goruntusu-44-_png.rf.3ef2f8114d403e1df9b235b2a1ac2d0f.jpg",
+      "reason": "crop smaller than 24 pixels"
+    },
+    {
+      "source": "wild_bottles",
+      "member": "Plastic Bottle Image Dataset/valid/images/bottle-12-_JPG.rf.a21956af88e061e75b2e8c6508038590.jpg",
+      "reason": "crop smaller than 24 pixels"
+    },
+    {
+      "source": "wild_bottles",
+      "member": "Plastic Bottle Image Dataset/valid/images/bottle-21-_JPG.rf.2b3396dfab3a79f84ead11dd3c344716.jpg",
+      "reason": "crop smaller than 24 pixels"
+    },
+    {
+      "source": "wild_bottles",
+      "member": "Plastic Bottle Image Dataset/valid/images/bottle-212-_JPG.rf.e3da53b0c97da73cc41a9a3a0259fb9b.jpg",
+      "reason": "crop smaller than 24 pixels"
+    },
+    {
+      "source": "wild_bottles",
+      "member": "Plastic Bottle Image Dataset/valid/images/bottle-735-_jpg.rf.6c0bd8ce31db1a1a4166e97a85a834e1.jpg",
+      "reason": "crop smaller than 24 pixels"
+    },
+    {
+      "source": "wild_bottles",
+      "member": "Plastic Bottle Image Dataset/valid/images/bottle-746-_jpg.rf.3a308b8cbf8e0c34286ea72940966619.jpg",
+      "reason": "crop smaller than 24 pixels"
+    },
+    {
+      "source": "wild_bottles",
+      "member": "Plastic Bottle Image Dataset/valid/images/bottle-756-_jpg.rf.bfccdcc7af5da4bd28fcd968bf36be60.jpg",
+      "reason": "crop smaller than 24 pixels"
+    },
+    {
+      "source": "wild_bottles",
+      "member": "Plastic Bottle Image Dataset/valid/images/bottle-782-_jpg.rf.d21108ee6577b4fdcd46f76ad601a7ed.jpg",
+      "reason": "crop smaller than 24 pixels"
+    },
+    {
+      "source": "wild_bottles",
+      "member": "Plastic Bottle Image Dataset/valid/images/bottle-786-_jpg.rf.a44bede8cb26a67df3ecd8a55f750035.jpg",
+      "reason": "crop smaller than 24 pixels"
+    },
+    {
+      "source": "wild_bottles",
+      "member": "Plastic Bottle Image Dataset/valid/images/group-people-walking-walkway-environmental-cleaning-concept-plastic-bottle-drinking-water-littering-street-149739305_jpg.rf.92f8e7d084fabe2d0f3bd1810a3f87c7.jpg",
+      "reason": "crop smaller than 24 pixels"
+    },
+    {
+      "source": "wild_bottles",
+      "member": "Plastic Bottle Image Dataset/valid/images/istockphoto-1138160447-1024x1024_jpg.rf.9f3783e67761d0f0bc748fdaf0ab1c6e.jpg",
+      "reason": "crop smaller than 24 pixels"
+    },
+    {
+      "source": "wild_bottles",
+      "member": "Plastic Bottle Image Dataset/valid/images/istockphoto-1139872059-1024x1024_jpg.rf.d316a9d4084ccf26062c7b969d1c4e18.jpg",
+      "reason": "crop smaller than 24 pixels"
+    },
+    {
+      "source": "wild_bottles",
+      "member": "Plastic Bottle Image Dataset/valid/images/photo-1631174721289-6656e7f3353c_jpg.rf.1ea501278ec14709f4f1e48e2a45acc9.jpg",
+      "reason": "crop smaller than 24 pixels"
+    },
+    {
+      "source": "wild_bottles",
+      "member": "Plastic Bottle Image Dataset/valid/images/photo-1631174721289-6656e7f3353c_jpg.rf.1ea501278ec14709f4f1e48e2a45acc9.jpg",
+      "reason": "crop smaller than 24 pixels"
+    },
+    {
+      "source": "wild_bottles",
+      "member": "Plastic Bottle Image Dataset/valid/images/photo-1631174721289-6656e7f3353c_jpg.rf.1ea501278ec14709f4f1e48e2a45acc9.jpg",
+      "reason": "crop smaller than 24 pixels"
+    },
+    {
+      "source": "wild_bottles",
+      "member": "Plastic Bottle Image Dataset/valid/images/plastic377_jpg.rf.95a5fd845299716aa07d515625124213.jpg",
+      "reason": "crop smaller than 24 pixels"
+    },
+    {
+      "source": "wild_bottles",
+      "member": "Plastic Bottle Image Dataset/valid/images/plastic41_jpg.rf.bd21ce4856f73a571f85be3818ed6f62.jpg",
+      "reason": "crop smaller than 24 pixels"
+    },
+    {
+      "source": "wild_bottles",
+      "member": "Plastic Bottle Image Dataset/valid/images/plastic96_jpg.rf.5d7741f0a335dfe90f8b76bb2a536aec.jpg",
+      "reason": "crop smaller than 24 pixels"
+    },
+    {
+      "source": "wild_bottles",
+      "member": "Plastic Bottle Image Dataset/valid/images/waterbottle125_jpg.rf.512daefc217e877c0c32f5828e10d285.jpg",
+      "reason": "crop smaller than 24 pixels"
+    }
+  ],
+  "water_level_dataset": {
+    "used": false,
+    "reason": "Water-level labels do not establish container material."
+  },
+  "split_method": "Fresh 70/15/15 target split, source/class stratified, whole groups; supplied splits rebuilt.",
+  "grouping": "Exact normalized pixels; source base names; uploaded consecutive blocks of 100; pHash Hamming<=3 plus RGB MAE<=18.",
+  "limitations": "Heuristic grouping cannot guarantee unseen physical items or capture sessions across splits."
+}
